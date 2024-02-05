@@ -1,0 +1,324 @@
+.tf-timeline {
+    position: relative;
+    padding-left: 26px;
+    border-left: 1px solid var(--line);
+    .timeline-item {
+        position: relative;
+        &::after {
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            left: -33px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: var(--primary);
+            height: 13px;
+            width: 13px;
+        }
+    }
+}
+
+.timeline-panel {
+    .timeline-item {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        background: var(--white);
+        box-shadow: var(--shadow-box);
+        border-radius: 16px;
+        .timeline-date {
+            text-align: center;
+            padding-right: 16px;
+            h2 {
+                font-family: $font-main-family;
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 700;
+            }
+            span {
+                color: var(--onSurface);
+            }
+        }
+        .timeline-content {
+            padding-left: 16px;
+            border-left: 1px solid var(--line);
+            p {
+                color: var(--onSurface);
+            }
+
+            .img-box {
+                min-width: 169px;
+                height: 95px;
+                border-radius: 14px;
+                overflow: hidden;
+                margin-top: 20px;
+                img {
+                    width: 100%;
+                    min-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(50% - 10px);
+            left: -6px;
+            background-color: var(--white);
+            box-shadow: var(--shadow-box);
+            width: 21px;
+            height: 21px;
+            transform: rotate(45deg);
+        }
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.timeline-color {
+    .timeline-item {
+        box-shadow: var(--shadow-box);
+        border-radius: 12px;
+        box-shadow: var(--shadow-box);
+
+        .timeline-header {
+            padding: 16px;
+            border-radius: 12px 12px 0px 0px;
+            p {
+                font-size: 13px;
+                line-height: 18.2px;
+            }
+        }
+        .timeline-body {
+            background: var(--white);
+            padding: 16px;
+            border-radius: 0px 0px 12px 12px;
+            color: var(--onSurface);
+        }
+        &::after {
+            top: 20%;
+            transform: translateY(-20%);
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(20% - 6px);
+            left: -6px;
+            background-color: var(--white);
+            width: 21px;
+            height: 21px;
+            transform: rotate(45deg);
+        }
+        &.primary {
+            .timeline-header {
+                background: var(--primary);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before {
+                background-color: var(--primary);
+            }
+        }
+        &.success {
+            .timeline-header {
+                background: var(--success);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--success);
+            }
+        }
+        &.danger {
+            .timeline-header {
+                background: var(--danger);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--danger);
+            }
+        }
+        &.warning {
+            .timeline-header {
+                background: var(--warning);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--warning);
+            }
+        }
+        &.light {
+            .timeline-header {
+                background: var(--light);
+                p,
+                h4 {
+                    color: var(--onSurface);
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--light);
+            }
+        }
+        &.dark {
+            .timeline-header {
+                background: var(--dark);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--dark);
+            }
+        }
+        &.disable {
+            .timeline-header {
+                background: var(--disable);
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+            &::before,
+            &::after {
+                background-color: var(--disable);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+}
+
+.timeline-number {
+    padding-left: 40px;
+    .timeline-item {
+        padding: 16px;
+        margin-right: -16px;
+        background: var(--white);
+        box-shadow: var(--shadow-box);
+        border-radius: 20px;
+        position: relative;
+        .timeline-content {
+            padding-left: 22px;
+            .timeline-header {
+                padding-bottom: 16px;
+                border-bottom: 1px solid var(--line);
+                p {
+                    font-size: 13px;
+                    line-height: 18.2px;
+                    color: var(--primary-btn);
+                }
+            }
+            .timeline-body {
+                padding-top: 16px;
+                .box-img {
+                    margin-top: 16px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 12px;
+                    img {
+                        border-radius: 14px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+        .number {
+            position: absolute;
+            top: 18px;
+            left: -18px;
+            font-size: 18px;
+            line-height: 25.2px;
+            font-weight: 700;
+            color: var(--white);
+            background: var(--primary);
+            border: 4px solid var(--white);
+            width: 40px;
+            height: 40px;
+            @include flex(center, center);
+            border-radius: 98px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -35px;
+            top: 37px;
+            width: 25px;
+            height: 1px;
+            background: var(--primary);
+        }
+        &::after {
+            left: -47px;
+            top: 37px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.timeline-status {
+    padding-left: 0;
+    border: 0;
+    .timeline-item {
+        padding-left: 26px;
+        padding-bottom: 23px;
+        border-left: 1px dashed var(--line-3);
+        .timeline-title {
+            font-weight: 700;
+        }
+        .timeline-date {
+            margin-top: 4px;
+            font-size: 13px;
+            line-height: 18.2px;
+            color: var(--text-5);
+        }
+        &::after {
+            left: -7px;
+            top: 8px;
+            background: var(--white);
+            border: 1px solid var(--line-3);
+        }
+        &.active {
+            @include flex(center, space-between);
+            .timeline-title {
+                color: var(--primary-btn);
+            }
+            .icon {
+                width: 40px;
+                height: 40px;
+                background: var(--primary);
+                @include flex(center, center);
+                border-radius: 98px;
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        &.process {
+            border-color: var(--primary);
+            &::after {
+                background: var(--primary);
+                border-color: var(--primary);
+            }
+        }
+    }
+}

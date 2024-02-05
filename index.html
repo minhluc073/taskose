@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/168.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/168.png" />
+    
+    <title>Store</title>
+
+
+</head>
+
+<body class="app-wallet">
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="spinner-circle spinner-line">
+            <span class="spinner-circle1 spinner-child"></span>
+            <span class="spinner-circle2 spinner-child"></span>
+            <span class="spinner-circle3 spinner-child"></span>
+            <span class="spinner-circle4 spinner-child"></span>
+            <span class="spinner-circle5 spinner-child"></span>
+            <span class="spinner-circle6 spinner-child"></span>
+            <span class="spinner-circle7 spinner-child"></span>
+            <span class="spinner-circle8 spinner-child"></span>
+            <span class="spinner-circle9 spinner-child"></span>
+        </div>
+    </div>
+    <!-- /preload -->
+    <div class="header-style2 fixed-top">
+        <div class="inner-left">
+            <p class="text-sm-start">Your Location</p>
+            <a href="javascript:void(0);" class="mt-4 text-caption fw-4 d-flex align-items-center gap-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M10.5 5C10.5 8.5 6 11.5 6 11.5C6 11.5 1.5 8.5 1.5 5C1.5 3.80653 1.97411 2.66193 2.81802 1.81802C3.66193 0.974106 4.80653 0.5 6 0.5C7.19347 0.5 8.33807 0.974106 9.18198 1.81802C10.0259 2.66193 10.5 3.80653 10.5 5Z" stroke="#E65223" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6.5C6.82843 6.5 7.5 5.82843 7.5 5C7.5 4.17157 6.82843 3.5 6 3.5C5.17157 3.5 4.5 4.17157 4.5 5C4.5 5.82843 5.17157 6.5 6 6.5Z" stroke="#E65223" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                2464 Royal Ln, New Jersey 
+            </a>
+        </div>
+        <div class="inner-right">
+            <span>
+                <a href="#sidebar" data-bs-toggle="modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="icon">
+                        <path opacity="0.4" d="M14.7359 1.83325H17.8397C19.1251 1.83325 20.1667 2.88362 20.1667 4.17988V7.3099C20.1667 8.60617 19.1251 9.65653 17.8397 9.65653H14.7359C13.4505 9.65653 12.4089 8.60617 12.4089 7.3099V4.17988C12.4089 2.88362 13.4505 1.83325 14.7359 1.83325Z" fill="#E55223"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.16035 1.83325H7.26416C8.54957 1.83325 9.59114 2.88362 9.59114 4.17988V7.3099C9.59114 8.60617 8.54957 9.65653 7.26416 9.65653H4.16035C2.87494 9.65653 1.83337 8.60617 1.83337 7.3099V4.17988C1.83337 2.88362 2.87494 1.83325 4.16035 1.83325ZM4.16035 12.3433H7.26416C8.54957 12.3433 9.59114 13.3937 9.59114 14.6899V17.82C9.59114 19.1153 8.54957 20.1666 7.26416 20.1666H4.16035C2.87494 20.1666 1.83337 19.1153 1.83337 17.82V14.6899C1.83337 13.3937 2.87494 12.3433 4.16035 12.3433ZM17.8397 12.3433H14.7359C13.4505 12.3433 12.4089 13.3937 12.4089 14.6899V17.82C12.4089 19.1153 13.4505 20.1666 14.7359 20.1666H17.8397C19.1251 20.1666 20.1667 19.1153 20.1667 17.82V14.6899C20.1667 13.3937 19.1251 12.3433 17.8397 12.3433Z" fill="#E55223"/>
+                    </svg>
+                </a>
+            </span>
+            <a href="chat.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.5 12.5C17.5 12.942 17.3244 13.366 17.0118 13.6785C16.6993 13.9911 16.2754 14.1667 15.8333 14.1667H5.83333L2.5 17.5V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V12.5Z" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="my-cart-selectAll.html" class="badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                    <path d="M7.24947 18.3332C7.70971 18.3332 8.0828 17.9601 8.0828 17.4998C8.0828 17.0396 7.70971 16.6665 7.24947 16.6665C6.78923 16.6665 6.41614 17.0396 6.41614 17.4998C6.41614 17.9601 6.78923 18.3332 7.24947 18.3332Z" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.4163 18.3332C16.8766 18.3332 17.2497 17.9601 17.2497 17.4998C17.2497 17.0396 16.8766 16.6665 16.4163 16.6665C15.9561 16.6665 15.583 17.0396 15.583 17.4998C15.583 17.9601 15.9561 18.3332 16.4163 18.3332Z" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.583008 0.833008H3.91634L6.14967 11.9913C6.22588 12.375 6.4346 12.7196 6.7393 12.9649C7.04399 13.2102 7.42526 13.3405 7.81634 13.333H15.9163C16.3074 13.3405 16.6887 13.2102 16.9934 12.9649C17.2981 12.7196 17.5068 12.375 17.583 11.9913L18.9163 4.99967H4.74967" stroke="#787982" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <i class="badge danger">2</i>
+            </a>
+            <span class="d-inline-flex flex-column align-items-center badge-icon mt-2" data-bs-target="#noti" data-bs-toggle="modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none">
+                    <path d="M14 6.6665C14 5.34042 13.4732 4.06865 12.5355 3.13097C11.5979 2.19329 10.3261 1.6665 9 1.6665C7.67392 1.6665 6.40215 2.19329 5.46447 3.13097C4.52678 4.06865 4 5.34042 4 6.6665C4 12.4998 1.5 14.1665 1.5 14.1665H16.5C16.5 14.1665 14 12.4998 14 6.6665Z" stroke="#787982" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 4" fill="none">
+                    <path d="M4.44168 1.5C4.29517 1.75256 4.08488 1.96221 3.83187 2.10794C3.57886 2.25367 3.292 2.33038 3.00002 2.33038C2.70803 2.33038 2.42117 2.25367 2.16816 2.10794C1.91515 1.96221 1.70486 1.75256 1.55835 1.5" stroke="#787982" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <i class="badge danger">2</i>
+
+            </span>
+            
+        </div>
+    </div>
+    <div class="app-content style-3">
+        <div class="line4-bt pb-12">
+            <div class="tf-container">
+                <div class="d-flex gap-12 justify-content-between align-items-center">
+                    <div class="search-box">
+                        <input type="text" class="search-field" placeholder="Search  for products...">
+                        <a href="search.html" class="right-icon icon-search"></a>
+                    </div>
+                    <a href="#filter" class="btn-filter" data-bs-toggle="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g clip-path="url(#clip0_65_4519)">
+                              <path d="M0.666667 3.1666H2.49067C2.63376 3.69308 2.94612 4.15786 3.37955 4.48922C3.81299 4.82057 4.34341 5.0001 4.889 5.0001C5.43459 5.0001 5.96501 4.82057 6.39845 4.48922C6.83188 4.15786 7.14424 3.69308 7.28733 3.1666H15.3333C15.5101 3.1666 15.6797 3.09636 15.8047 2.97133C15.9298 2.84631 16 2.67674 16 2.49993C16 2.32312 15.9298 2.15355 15.8047 2.02852C15.6797 1.9035 15.5101 1.83326 15.3333 1.83326H7.28733C7.14424 1.30677 6.83188 0.841999 6.39845 0.510641C5.96501 0.179283 5.43459 -0.000244141 4.889 -0.000244141C4.34341 -0.000244141 3.81299 0.179283 3.37955 0.510641C2.94612 0.841999 2.63376 1.30677 2.49067 1.83326H0.666667C0.489856 1.83326 0.320286 1.9035 0.195262 2.02852C0.0702379 2.15355 0 2.32312 0 2.49993C0 2.67674 0.0702379 2.84631 0.195262 2.97133C0.320286 3.09636 0.489856 3.1666 0.666667 3.1666ZM4.88867 1.33326C5.11941 1.33326 5.34497 1.40169 5.53683 1.52988C5.72869 1.65808 5.87822 1.84028 5.96653 2.05346C6.05483 2.26665 6.07793 2.50122 6.03292 2.72753C5.9879 2.95385 5.87679 3.16173 5.71362 3.32489C5.55046 3.48805 5.34258 3.59916 5.11627 3.64418C4.88996 3.68919 4.65538 3.66609 4.4422 3.57779C4.22902 3.48949 4.04681 3.33995 3.91862 3.14809C3.79042 2.95624 3.722 2.73067 3.722 2.49993C3.72235 2.19062 3.84538 1.89408 4.0641 1.67536C4.28281 1.45664 4.57936 1.33361 4.88867 1.33326ZM15.3333 7.33326H13.5093C13.3665 6.80665 13.0542 6.34171 12.6208 6.01021C12.1874 5.67872 11.657 5.49911 11.1113 5.49911C10.5657 5.49911 10.0352 5.67872 9.60182 6.01021C9.16842 6.34171 8.85619 6.80665 8.71333 7.33326H0.666667C0.489856 7.33326 0.320286 7.4035 0.195262 7.52852C0.0702379 7.65355 0 7.82312 0 7.99993C0 8.17674 0.0702379 8.34631 0.195262 8.47133C0.320286 8.59636 0.489856 8.6666 0.666667 8.6666H8.71333C8.85619 9.19321 9.16842 9.65815 9.60182 9.98964C10.0352 10.3211 10.5657 10.5008 11.1113 10.5008C11.657 10.5008 12.1874 10.3211 12.6208 9.98964C13.0542 9.65815 13.3665 9.19321 13.5093 8.6666H15.3333C15.5101 8.6666 15.6797 8.59636 15.8047 8.47133C15.9298 8.34631 16 8.17674 16 7.99993C16 7.82312 15.9298 7.65355 15.8047 7.52852C15.6797 7.4035 15.5101 7.33326 15.3333 7.33326ZM11.1113 9.1666C10.8806 9.1666 10.655 9.09817 10.4632 8.96998C10.2713 8.84178 10.1218 8.65957 10.0335 8.44639C9.94517 8.23321 9.92207 7.99864 9.96708 7.77232C10.0121 7.54601 10.1232 7.33813 10.2864 7.17497C10.4495 7.01181 10.6574 6.9007 10.8837 6.85568C11.11 6.81066 11.3446 6.83377 11.5578 6.92207C11.771 7.01037 11.9532 7.15991 12.0814 7.35176C12.2096 7.54362 12.278 7.76918 12.278 7.99993C12.2776 8.30924 12.1546 8.60578 11.9359 8.8245C11.7172 9.04321 11.4206 9.16624 11.1113 9.1666ZM15.3333 12.8333H7.28733C7.14424 12.3068 6.83188 11.842 6.39845 11.5106C5.96501 11.1793 5.43459 10.9998 4.889 10.9998C4.34341 10.9998 3.81299 11.1793 3.37955 11.5106C2.94612 11.842 2.63376 12.3068 2.49067 12.8333H0.666667C0.489856 12.8333 0.320286 12.9035 0.195262 13.0285C0.0702379 13.1535 0 13.3231 0 13.4999C0 13.6767 0.0702379 13.8463 0.195262 13.9713C0.320286 14.0964 0.489856 14.1666 0.666667 14.1666H2.49067C2.63376 14.6931 2.94612 15.1579 3.37955 15.4892C3.81299 15.8206 4.34341 16.0001 4.889 16.0001C5.43459 16.0001 5.96501 15.8206 6.39845 15.4892C6.83188 15.1579 7.14424 14.6931 7.28733 14.1666H15.3333C15.5101 14.1666 15.6797 14.0964 15.8047 13.9713C15.9298 13.8463 16 13.6767 16 13.4999C16 13.3231 15.9298 13.1535 15.8047 13.0285C15.6797 12.9035 15.5101 12.8333 15.3333 12.8333ZM4.88867 14.6666C4.65792 14.6666 4.43236 14.5982 4.2405 14.47C4.04864 14.3418 3.89911 14.1596 3.81081 13.9464C3.72251 13.7332 3.6994 13.4986 3.74442 13.2723C3.78943 13.046 3.90055 12.8381 4.06371 12.675C4.22687 12.5118 4.43475 12.4007 4.66106 12.3557C4.88737 12.3107 5.12195 12.3338 5.33513 12.4221C5.54831 12.5104 5.73052 12.6599 5.85871 12.8518C5.98691 13.0436 6.05533 13.2692 6.05533 13.4999C6.0548 13.8092 5.93172 14.1056 5.71304 14.3243C5.49436 14.543 5.19792 14.6661 4.88867 14.6666Z" fill="#151515"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_65_4519">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line4-bt pt-16 pb-16">
+            <div class="tf-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>Categories</h5>
+                    <a href="category.html" class="d-flex align-items-center gap-4 text-secondary">
+                        View all
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M4.4996 9.50001C4.56541 9.50039 4.63064 9.48778 4.69156 9.4629C4.75248 9.43802 4.80788 9.40135 4.8546 9.35501L7.8546 6.35501C7.94773 6.26133 8 6.13461 8 6.00251C8 5.87042 7.94773 5.7437 7.8546 5.65001L4.8546 2.65001C4.75895 2.5681 4.63592 2.5253 4.51008 2.53016C4.38424 2.53502 4.26487 2.58718 4.17582 2.67623C4.08678 2.76528 4.03461 2.88465 4.02975 3.01049C4.02489 3.13632 4.06769 3.25936 4.1496 3.35501L6.7946 6.00001L4.1496 8.64501C4.07939 8.71465 4.03141 8.80354 4.01171 8.90045C3.99202 8.99735 4.00151 9.09792 4.03897 9.18944C4.07643 9.28096 4.14019 9.35931 4.22218 9.41459C4.30417 9.46987 4.40072 9.4996 4.4996 9.50001Z" fill="#787982"/>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="mt-16 box-category">
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product1.png" alt="">
+                            </div>
+                            Drinks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product2.png" alt="">
+                            </div>
+                            Cake
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product3.png" alt="">
+                            </div>
+                            Meat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product4.png" alt="">
+                            </div>
+                            Milk & Eggs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product5.png" alt="">
+                            </div>
+                            Frozen Food
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product6.png" alt="">
+                            </div>
+                            Fruit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product7.png" alt="">
+                            </div>
+                            Snacks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details-category-drink.html" class="category-item">
+                            <div class="box-img-product">
+                                <img src="images/product/product8.png" alt="">
+                            </div>
+                            Fish
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="pt-16 pb-16 line4-bt">
+            <div class="tf-container">
+                <div class="swiper tf-swiper swiper-wrapper-lr" data-space-between="12" data-preview="1.2" data-tablet="1.5" data-desktop="2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="voucher-details.html" class="banner-style1">
+                                <div class="content-left">
+                                    <span class="title">SALE OFF</span>
+                                    <p class="text-onSurface text-caption">Organic ingredients made easy</p>
+                                    <div class="mt-6">
+                                        <span class="text-secondary text-sm-start">Starting at :</span> <span class="text-primary fw-5 text-sm-start">$21.5</span>
+                                    </div>
+                                </div>
+                                <div class="box-img">
+                                    <img src="images/vegetable/banner1.png" alt="">
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner-style2" style="background-image: url(images/background/bg-1.jpg);">
+                                <div class="content-left">
+                                    <p class="text-white fw-5 text-caption">Discount 50% All <br> Products</p>
+                                    <a href="voucher-details.html" class="mt-12 tf-btn">Purchase now!</a>
+                                </div>
+                                <div class="content-right">
+                                    <div class="top">
+                                        <div class="box-img">
+                                            <img src="images/vegetable/img-1.png" alt="">
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/vegetable/img-2.png" alt="">
+                    
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="box-img">
+                                            <img src="images/vegetable/img-3.png" alt="">
+                    
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="images/vegetable/img-4.png" alt="">
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-16 pb-16 line4-bt">
+            <div class="tf-container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5>Flash Sale</h5>
+                    <p><span class="js-countdown countdown" data-timer="75000" data-labels=" :  ,  : , : , "></span></p>
+                </div>
+                <div class="mt-16 swiper tf-swiper-2 swiper-wrapper-lr" data-space-between="12" data-preview="3.2" data-tablet="3.2" data-desktop="4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="product-details.html" class="box-product">
+                                <div class="img">
+                                    <img src="images/product/product9.png" alt="">
+                                </div>
+                                <div class="progress progress-product">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <ul class="mt-4">
+                                    <li class="text-onSurface fw-6">$19.99</li>
+                                    <li class="text-sm-start">$39.00</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="product-details.html" class="box-product">
+                                <div class="img">
+                                    <img src="images/product/product10.png" alt="">
+                                </div>
+                                <div class="progress progress-product">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <ul class="mt-4">
+                                    <li class="text-onSurface fw-6">$29.99</li>
+                                    <li class="text-sm-start">$21.99</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="product-details.html" class="box-product">
+                                <div class="img">
+                                    <img src="images/product/product11.png" alt="">
+                                </div>
+                                <div class="progress progress-product">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <ul class="mt-4">
+                                    <li class="text-onSurface fw-6">$15.00</li>
+                                    <li class="text-sm-start">$20.00</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="product-details.html" class="box-product">
+                                <div class="img">
+                                    <img src="images/product/product2.png" alt="">
+                                </div>
+                                <div class="progress progress-product">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                                <ul class="mt-4">
+                                    <li class="text-onSurface fw-6">$99.99</li>
+                                    <li class="text-sm-start">$100.00</li>
+                                </ul>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="fixed-cart">
+            <a href="my-cart.html" class="cart-icon badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g clip-path="url(#clip0_1_751)">
+                      <path d="M8.61989 25.7603C9.19263 25.7603 9.65693 25.2588 9.65693 24.6403C9.65693 24.0217 9.19263 23.5203 8.61989 23.5203C8.04715 23.5203 7.58286 24.0217 7.58286 24.6403C7.58286 25.2588 8.04715 25.7603 8.61989 25.7603Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.0281 25.7603C20.6008 25.7603 21.0651 25.2588 21.0651 24.6403C21.0651 24.0217 20.6008 23.5203 20.0281 23.5203C19.4554 23.5203 18.9911 24.0217 18.9911 24.6403C18.9911 25.2588 19.4554 25.7603 20.0281 25.7603Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0.324066 2.23999H4.47221L7.25147 17.2368C7.3463 17.7524 7.60604 18.2156 7.98522 18.5453C8.3644 18.8749 8.83886 19.0501 9.32555 19.04H19.4055C19.8922 19.0501 20.3667 18.8749 20.7459 18.5453C21.1251 18.2156 21.3848 17.7524 21.4796 17.2368L23.1389 7.83999H5.50925" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_751">
+                        <rect width="28" height="28" fill="white"/>
+                      </clipPath>
+                    </defs>
+                </svg>
+                <i class="badge danger">2</i>
+            </a>
+        </div>
+        
+        
+    </div>
+
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li class="active"><a href="index.html"><i class="icon icon-home-active"></i> Store</a></li>
+            <li><a href="category.html"><i class="icon icon-group"></i> Categories</a></li>
+            <li><a href="service.html"><i class="icon icon-store"></i> Service</a></li>
+            <li><a href="order.html"><i class="icon icon-basket"></i> My Order</a></li>
+            <li><a href="profile.html"><i class="icon icon-profile"></i> Profile</a></li>
+        </ul>  
+    </div>
+    
+    <!-- filter -->
+    <div class="modal fade action-sheet full" id="filter">
+        <div class="modal-dialog" role="document">
+            <div class="modal-up">
+                <div class="top line-bt">
+                    <div class="inner">
+                        <h3>Filter</h3>
+                        <span class="icon-close1" data-bs-dismiss="modal"></span>
+                    </div>
+                </div> 
+                <div class="content py-16">
+                    <div class="tf-container">
+                        <h6>Categories</h6>
+                        <ul class="grid-2 gap-12 mt-16">
+                            <li> 
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb1" checked>
+                                    <label for="cb1" class="text-black">All</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb2">
+                                    <label for="cb2" class="text-black">Fasion</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb3">
+                                    <label for="cb3" class="text-black">Drinks ( 214 )</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb4">
+                                    <label for="cb4" class="text-black">Mom & Baby</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb5">
+                                    <label for="cb5" class="text-black">Foods ( 100 )</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb6">
+                                    <label for="cb6" class="text-black">Health</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb7">
+                                    <label for="cb7" class="text-black">Appliances ( 34)</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb8">
+                                    <label for="cb8" class="text-black">Cosmetics</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb9">
+                                    <label for="cb9" class="text-black">Accessories ( 50 )</label>
+                                </div> 
+                            </li>
+                        </ul>
+                        <div class="mt-16 d-flex justify-content-between align-items-center">
+                            <h6>Pricing:</h6>
+                            <div class="d-flex gap-8 align-items-center">
+                                <input type="text" id="price-val-lower" class="form-control">
+                                <span>To</span>
+                                <input type="text" id="price-val-upper" class="form-control">
+                            </div>
+                        </div>
+                        <div class="box-pricing mt-24">
+                            <div id="price-val"></div>
+                        </div>
+                        <div class="mt-40">
+                            <h6>Product Status</h6>
+                            <ul class="grid-2 gap-12 mt-16">
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstatus1" checked>
+                                        <label for="cbstatus1" class="text-black">In Stock</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstatus2">
+                                        <label for="cbstatus2" class="text-black">On Sale</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <h6>Rating Stars</h6>
+                            <ul class="grid-2 gap-12 mt-16">
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar" checked>
+                                        <label for="cbstar" class="text-black">5 Star</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar2">
+                                        <label for="cbstar2" class="text-black">4 Star</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar3">
+                                        <label for="cbstar3" class="text-black">3 Star</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-fixed p-16 line-top d-flex gap-8">
+                    <a href="javascript:void(0);" class="tf-btn surface del-cartAll">Reset</a>
+                    <a href="search.html" class="tf-btn primary">Show Results</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar -->
+    <div class="modal fade modalLeft" id="sidebar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-sidebar">
+                <div class="sidebar-header" style="background-image: url('images/background/line-logo.png')">
+                    <a href="index.html" class="sidebar-logo">
+                        <img src="images/logo/168.png" alt="img">
+                    </a>
+                    <p>Grocery Delivery Mobile Template</p>
+                </div>
+                <div class="sidebar-content">
+                    <div class="d-flex gap-10 align-items-center pb-20 line-bt">
+                        <div class="avatar avt-40">
+                            <img src="images/avt/avt1.jpg" alt="img">
+                        </div>
+                        <div class="content-right">
+                            <p class="text-1">Good morning</p>
+                            <h6 class="fw-7">Tony Nguyen</h6>
+                        </div>
+                    </div>
+                    <ul class="pt-20 pb-20">
+                        <li class="text-sm-start text-uppercase fw-7 text-2">Main menu</li>
+                        <li class="mt-18 sub-menu" id="accordionExample">
+                            <a href="index.html" class="nav-link-item not-link" >
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7.62043 17.3185V14.7628C7.62042 14.1152 8.14704 13.589 8.79935 13.5849H11.1945C11.8497 13.5849 12.3809 14.1123 12.3809 14.7628V17.3111C12.3809 17.8728 12.8373 18.3293 13.4031 18.3334H15.0372C15.8003 18.3354 16.5329 18.0357 17.0733 17.5007C17.6136 16.9656 17.9173 16.239 17.9173 15.4813V8.22162C17.9173 7.60957 17.644 7.02901 17.1712 6.63633L11.6198 2.22864C10.6494 1.45768 9.26346 1.48259 8.32181 2.2879L2.88983 6.63633C2.3946 7.01743 2.09861 7.59972 2.08398 8.22162V15.4739C2.08398 17.0532 3.37347 18.3334 4.96413 18.3334H6.56089C6.83329 18.3354 7.09522 18.2293 7.28855 18.0388C7.48187 17.8482 7.59059 17.589 7.59058 17.3185H7.62043Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                   
+                        <li class="mt-16">
+                            <a href="javascript:void(0);" class="nav-link-item btn-choose-page">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path opacity="0.4" d="M15.6734 7.51758C15.2971 7.51758 14.7987 7.50925 14.1782 7.50925C12.6649 7.50925 11.4206 6.25675 11.4206 4.72925V2.04925C11.4206 1.83841 11.2523 1.66675 11.0436 1.66675H6.6357C4.57865 1.66675 2.91602 3.35508 2.91602 5.42425V14.4034C2.91602 16.5742 4.65787 18.3334 6.80733 18.3334H13.3712C15.4209 18.3334 17.0827 16.6559 17.0827 14.5851V7.89258C17.0827 7.68091 16.9152 7.51008 16.7056 7.51091C16.3533 7.51341 15.9308 7.51758 15.6734 7.51758Z" fill="#D3D5DA"/>
+                                    <path opacity="0.4" d="M13.4029 2.13947C13.1538 1.88031 12.7188 2.05864 12.7188 2.41781V4.61531C12.7188 5.53697 13.4779 6.29531 14.3996 6.29531C14.9804 6.30197 15.7871 6.30364 16.4721 6.30197C16.8229 6.30114 17.0013 5.88197 16.7579 5.62864C15.8788 4.71447 14.3046 3.07614 13.4029 2.13947Z" fill="#D3D5DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.47742 9.48986H10.2983C10.6408 9.48986 10.9191 9.21236 10.9191 8.86986C10.9191 8.52736 10.6408 8.24902 10.2983 8.24902H7.47742C7.13492 8.24902 6.85742 8.52736 6.85742 8.86986C6.85742 9.21236 7.13492 9.48986 7.47742 9.48986ZM7.47751 13.6517H12.0142C12.3567 13.6517 12.635 13.3742 12.635 13.0317C12.635 12.6892 12.3567 12.4109 12.0142 12.4109H7.47751C7.13501 12.4109 6.85751 12.6892 6.85751 13.0317C6.85751 13.3742 7.13501 13.6517 7.47751 13.6517Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Pages</span>
+                            </a>
+                        </li>
+                        <li class="mt-16">
+                            <a href="javascript:void(0);" class="nav-link-item btn-choose-component">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path opacity="0.4" d="M13.3947 1.66675H16.2164C17.3849 1.66675 18.3318 2.62162 18.3318 3.80005V6.64552C18.3318 7.82395 17.3849 8.77882 16.2164 8.77882H13.3947C12.2262 8.77882 11.2793 7.82395 11.2793 6.64552V3.80005C11.2793 2.62162 12.2262 1.66675 13.3947 1.66675Z" fill="#D3D5DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.78145 1.66675H6.60309C7.77165 1.66675 8.71853 2.62162 8.71853 3.80005V6.64552C8.71853 7.82395 7.77165 8.77882 6.60309 8.77882H3.78145C2.6129 8.77882 1.66602 7.82395 1.66602 6.64552V3.80005C1.66602 2.62162 2.6129 1.66675 3.78145 1.66675ZM3.78145 11.2213H6.60309C7.77165 11.2213 8.71853 12.1762 8.71853 13.3546V16.2001C8.71853 17.3777 7.77165 18.3334 6.60309 18.3334H3.78145C2.6129 18.3334 1.66602 17.3777 1.66602 16.2001V13.3546C1.66602 12.1762 2.6129 11.2213 3.78145 11.2213ZM16.2172 11.2213H13.3956C12.227 11.2213 11.2802 12.1762 11.2802 13.3546V16.2001C11.2802 17.3777 12.227 18.3334 13.3956 18.3334H16.2172C17.3858 18.3334 18.3327 17.3777 18.3327 16.2001V13.3546C18.3327 12.1762 17.3858 11.2213 16.2172 11.2213Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Components</span>
+                            </a>
+                        </li>
+                        <li class="mt-16">
+                            <a href="list-shop.html" class="nav-link-item not-link">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M5.92631 16.9079C6.75567 16.9079 7.43514 17.6018 7.43514 18.459C7.43514 19.3061 6.75567 20 5.92631 20C5.08697 20 4.4075 19.3061 4.4075 18.459C4.4075 17.6018 5.08697 16.9079 5.92631 16.9079ZM17.1676 16.9079C17.9969 16.9079 18.6764 17.6018 18.6764 18.459C18.6764 19.3061 17.9969 20 17.1676 20C16.3282 20 15.6487 19.3061 15.6487 18.459C15.6487 17.6018 16.3282 16.9079 17.1676 16.9079ZM1.27823 0.00011949L1.38006 0.0087383L3.7632 0.375101C4.10293 0.437352 4.35274 0.722074 4.38272 1.06905L4.57257 3.35499C4.60254 3.68257 4.86234 3.92749 5.18209 3.92749H18.6766C19.2861 3.92749 19.6858 4.1418 20.0855 4.61123C20.4852 5.08067 20.5551 5.7542 20.4652 6.36549L19.5159 13.06C19.3361 14.3469 18.2569 15.2949 16.9879 15.2949H6.08639C4.75742 15.2949 3.65828 14.255 3.54837 12.908L2.62908 1.7834L1.12026 1.51807C0.72057 1.44664 0.440788 1.04864 0.510734 0.640433C0.580679 0.223045 0.970376 -0.0535127 1.38006 0.0087383L1.27823 0.00011949ZM15.3891 7.70236H12.6213C12.2016 7.70236 11.8719 8.03912 11.8719 8.46774C11.8719 8.88615 12.2016 9.23312 12.6213 9.23312H15.3891C15.8088 9.23312 16.1386 8.88615 16.1386 8.46774C16.1386 8.03912 15.8088 7.70236 15.3891 7.70236Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>All Shop</span>
+                            </a>
+                        </li>
+                        <li class="mt-16">
+                            <a href="profile.html" class="nav-link-item not-link">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.99815 12.6455C6.40398 12.6455 3.33398 13.2122 3.33398 15.4788C3.33398 17.7463 6.38482 18.333 9.99815 18.333C13.5923 18.333 16.6623 17.7672 16.6623 15.4997C16.6623 13.2322 13.6123 12.6455 9.99815 12.6455Z" fill="#D3D5DA"/>
+                                    <path opacity="0.4" d="M9.99789 10.4865C12.4462 10.4865 14.4079 8.524 14.4079 6.0765C14.4079 3.629 12.4462 1.6665 9.99789 1.6665C7.55039 1.6665 5.58789 3.629 5.58789 6.0765C5.58789 8.524 7.55039 10.4865 9.99789 10.4865Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="mt-16">
+                            <a href="chat.html" class="nav-link-item not-link">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path opacity="0.4" d="M10.016 1.66675C5.17435 1.66675 1.66602 5.61675 1.66602 10.0001C1.66602 11.4001 2.07435 12.8417 2.79102 14.1584C2.92435 14.3751 2.94102 14.6501 2.84935 14.9084L2.29102 16.7751C2.16602 17.2251 2.54935 17.5584 2.97435 17.4251L4.65768 16.9251C5.11602 16.7751 5.47435 16.9667 5.90018 17.2251C7.11685 17.9417 8.63268 18.3084 9.99935 18.3084C14.1327 18.3084 18.3327 15.1167 18.3327 9.97508C18.3327 5.54175 14.7493 1.66675 10.016 1.66675Z" fill="#D3D5DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98289 11.0751C9.39122 11.0668 8.91622 10.5918 8.91622 10.0001C8.91622 9.41676 9.39955 8.93342 9.98289 8.94176C10.5746 8.94176 11.0496 9.41676 11.0496 10.0084C11.0496 10.5918 10.5746 11.0751 9.98289 11.0751ZM6.14089 11.0751C5.55755 11.0751 5.07422 10.5918 5.07422 10.0084C5.07422 9.41678 5.54922 8.94178 6.14089 8.94178C6.73255 8.94178 7.20755 9.41678 7.20755 10.0084C7.20755 10.5918 6.73255 11.0668 6.14089 11.0751ZM12.7577 10.0084C12.7577 10.5918 13.2327 11.0751 13.8244 11.0751C14.4161 11.0751 14.8911 10.5918 14.8911 10.0084C14.8911 9.41676 14.4161 8.94176 13.8244 8.94176C13.2327 8.94176 12.7577 9.41676 12.7577 10.0084Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Chat</span>
+                            </a>
+                        </li>
+                        <li class="mt-16">
+                            <a href="log-in.html" class="nav-link-item not-link">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path opacity="0.4" d="M1.66602 5.37258C1.66602 3.33008 3.35788 1.66675 5.43646 1.66675H9.57072C11.6451 1.66675 13.3327 3.32508 13.3327 5.36425V14.6276C13.3327 16.6709 11.6408 18.3334 9.56139 18.3334H5.42883C3.35364 18.3334 1.66602 16.6751 1.66602 14.6359V13.8526V5.37258Z" fill="#D3D5DA"/>
+                                    <path d="M18.149 9.54579L15.7775 7.12162C15.5324 6.87162 15.138 6.87162 14.8937 7.12329C14.6502 7.37495 14.651 7.78079 14.8953 8.03079L16.1947 9.35828H14.9489H7.95696C7.61203 9.35828 7.33203 9.64579 7.33203 9.99995C7.33203 10.355 7.61203 10.6416 7.95696 10.6416H16.1947L14.8953 11.9691C14.651 12.2191 14.6502 12.625 14.8937 12.8766C15.0162 13.0025 15.1761 13.0658 15.3368 13.0658C15.4959 13.0658 15.6558 13.0025 15.7775 12.8783L18.149 10.455C18.2667 10.3341 18.3333 10.1708 18.3333 9.99995C18.3333 9.82995 18.2667 9.66662 18.149 9.54579Z" fill="#D3D5DA"/>
+                                </svg>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalRight" id="noti">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header fixed-top line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h6>Notification</h6>  
+                </div> 
+                <div class="overflow-auto app-content style-2">
+                    <div class="tf-container">
+                        <ul class="product-tabs mt-16" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">All Notification</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#voucher">Voucher</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#order">Order</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#promotion">Promotion</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-16">
+                            <ul class="tab-pane fade active show" id="all" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="voucher" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="order" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="promotion" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- noti popup -->
+    <div class="modal fade modalCenter" id="modalNoti">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+              <div class="p-16 line-bt text-center">
+                  <h5>“Grecory” Would Like To 
+                    Send You Notifications</h5>
+                  <p class="mt-8 text-large">Notifications may include alerts, sounds, and icon badges. These can be configured in Settings.</p>
+              </div>
+              <div class="grid-2">
+                 <a href="#" class="line-r text-center text-button fw-6 p-10 text-secondary btn-hide-modal" data-bs-dismiss="modal" >Don’t Allow</a>
+                 <a href="#" class="text-center text-button fw-6 p-10 text-primary btn-hide-modal"  data-bs-toggle="modal" data-bs-target="#notiPrivacy"> Allow</a> 
+              </a>
+              </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- noti popup 2-->
+    <div class="modal fade modalCenter" id="notiPrivacy">
+       <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-20">
+             <div class="heading">
+              <h5>Privacy</h5>
+              <div class="mt-4">
+                  <p>A mobile app privacy policy is a legal statement that must be clear, conspicuous, and consented to by all users. It must disclose how a mobile app gathers, stores, and uses the personally identifiable information it collects from its users.</p>
+                  <p>A mobile privacy app is developed and presented to users so that mobile app developers stay compliant with state, federal, and international laws. As a result, they fulfill the legal requirement to safeguard user privacy while protecting the company itself from legal challenges.</p>
+              </div>
+              <h5 class="mt-20">Authorized Users</h5>
+              <p class="mt-4">
+                  A mobile app privacy policy is a legal statement that must be clear, conspicuous, and consented to by all users. It must disclose how a mobile app gathers, stores, and uses the personally identifiable information it collects from its users.
+              </p>
+              <div class="d-flex gap-8 align-items-center mt-20">
+                <input type="checkbox" class="tf-checkbox sm" id="cb-ip"> 
+                <label for="cb-ip">I agree to the Term of sevice and Privacy policy</label>
+              </div>
+           
+             </div>
+             <div class="mt-20">
+                <a href="#" class="tf-btn md primary" data-bs-dismiss="modal">I Accept</a>
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <div class="modal fade modalLeft" id="modalPage">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-second">
+                <div class="header line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h4>Pages</h4>  
+                </div> 
+                <div class="overflow-auto">
+                    <div class="tf-container">
+                        <ul>
+                          <li><a href="boarding.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Boarding 01</span>
+                          </a></li>
+                          <li><a href="boarding-2.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Boarding 02</span>
+            
+                          </a></li>
+                          <li><a href="boarding-3.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Boarding 03</span>
+            
+                          </a></li>
+                          <li><a href="log-in.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>LogIn</span>
+                          </a></li>
+                          <li><a href="register.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Register</span>
+            
+                          </a></li>
+                          <li><a href="verfied.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Verified</span>
+            
+                          </a></li>
+                          <li><a href="otp.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>OTP</span>
+                          </a></li>
+                          <li><a href="reset-pass.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Reset Password</span>
+                            
+                          </a></li>
+                          <li><a href="create-pass.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Create New Password</span>
+                          </a></li> 
+                          <li><a href="index.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Home</span>
+                          </a></li>
+                          <li><a href="category.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Categories</span>
+                          </a></li>
+                        
+                          <li><a href="list-shop.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>List Shop</span>
+                          </a></li>
+                          <li><a href="shop-details.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span> Shop Details</span>
+                          </a></li>
+                          <li><a href="search.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Search</span>
+                          </a></li>
+                          <li><a href="chat.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Chat</span>
+                          </a></li>
+                          <li><a href="order-chat.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Order Chat</span>
+                          </a></li>
+                          <li><a href="list-voucher.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>List Voucher</span>
+                          </a></li>
+                          <li><a href="voucher-details.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Voucher Details</span>
+                          </a></li>
+                          <li><a href="details-category-drink.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Category Drink</span>
+                          </a></li>
+                          <li><a href="product-details.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Product Details</span>
+                          </a></li>
+                          <li><a href="service.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Service</span>
+                          </a></li>
+                          <li><a href="my-cart.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>My Cart</span>
+                          </a></li>
+                          <li><a href="order.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>My Order</span>
+                          </a></li>
+                          <li><a href="order-details.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Order Details</span>
+                          </a></li>
+                          <li><a href="order-details-completed.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Order Details Completed</span>
+                          </a></li>
+                          <li><a href="order-tracking.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Order Tracking</span>
+                          </a></li>
+                          <li><a href="order-tracking-done.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Order Tracking Done</span>
+                          </a></li>
+                          <li><a href="order-dont.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>My Order Don't</span>
+                          </a></li>
+                          <li><a href="my-cart-selectAll.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>My Cart Select</span>
+                          </a></li>
+                          <li><a href="check-out.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Check Out</span>
+                          </a></li>
+                          <li><a href="bill-payment.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Bill Payment</span>
+                          </a></li>
+                          <li><a href="successful.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Successful</span>
+                          </a></li>
+                          <li><a href="profile.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Profile</span>
+                          </a></li>
+                          <li><a href="profile-details.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Profile Details</span>
+                          </a></li>
+                          <li><a href="setting.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Setting</span>
+                          </a></li>
+                          <li><a href="change-name.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Change Name</span>
+                          </a></li>
+                          <li><a href="change-pass.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Change Password</span>
+                          </a></li>
+                          <li><a href="favourite.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Favorite</span>
+                          </a></li>
+                          <li><a href="location.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Location</span>
+                          </a></li>
+                          <li><a href="add-new-address.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                            <span>Add New Address</span>
+                          </a></li>
+                          <li><a href="choose-place.html" class="nav-link-item pt-16 pb-16 not-link">
+                            <span>Choose Place</span>
+                          </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modalLeft" id="modalComponent">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-second">
+                <div class="header line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h4>Components</h4>  
+                </div> 
+                <div class="overflow-auto">
+                    <div class="tf-container">
+                        <ul>
+                            <li><a href="ui-alert.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-alert"></i>
+                              <span>Alert</span>
+                            </a></li>
+                            <li><a href="ui-avatar.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-avt"></i>
+                              <span>Avatar</span>
+                            </a></li>
+                            <li><a href="ui-button.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-btn"></i>
+                              <span>Button</span>
+                            </a></li>
+                            <li><a href="ui-radio.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-radio"></i>
+                              <span>Radio button</span>
+                            </a></li>
+                            <li><a href="ui-input.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-input"></i>
+                              <span>Input</span>
+                            </a></li>
+                            <li><a href="ui-badge.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-badge"></i>
+                              <span>Badge</span>
+                            </a></li>
+                            <li><a href="ui-btn-group.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-btn-group"></i>
+                              <span>Button group</span>
+                            </a></li>
+                            <li><a href="ui-card.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-card"></i>
+                              <span>Card</span>
+                            </a></li>
+                            <li><a href="ui-chart.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-chart"></i>
+                              <span>Charts</span>
+                            </a></li>
+                            <li><a href="ui-dropdown.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-dropdown"></i>
+                              <span>Dropdown</span>
+                            </a></li>
+                           
+                            <li><a href="ui-timeline.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-timeline"></i>
+                              <span>Timeline</span>
+                            </a></li>
+                            <li><a href="ui-list-group.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-listgroup"></i>
+                              <span>List group</span>
+                            </a></li>
+                            <li><a href="ui-modal.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-modal"></i>
+                              <span>Modal</span>
+                            </a></li>
+                            <li><a href="ui-menubar.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-menubar"></i>
+                              <span>Menubar</span>
+                            </a></li>
+                            <li><a href="ui-progressbar.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-progress"></i>
+                              <span>Progressbar</span>
+                            </a></li>
+                            <li><a href="ui-social.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-social"></i>
+                              <span>Social</span>
+                            </a></li>
+                            <li><a href="ui-typography.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-typo"></i>
+                              <span>Typography</span>
+                            </a></li>
+                            <li><a href="ui-toast.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-toast"></i>
+                              <span>Toast</span>
+                            </a></li>
+                            <li><a href="ui-treeview.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-treeview"></i>
+                              <span>Treeview</span>
+                            </a></li>
+                            <li><a href="ui-switch.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-sw"></i>
+                              <span>Switch</span>
+                            </a></li>
+                            <li><a href="ui-stepper.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-stepper"></i>
+                              <span>Stepper</span>
+                            </a></li>
+                            <li><a href="ui-spinner.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-spin"></i>
+                              <span>Spinner</span>
+                            </a></li>
+                            <li><a href="ui-rangle-slider.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-range"></i>
+                              <span>Range slider</span>
+                            </a></li>
+                            <li><a href="ui-lightgallery.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-gallery"></i>
+                              <span>Light gallery</span>
+                            </a></li>
+                            <li><a href="ui-divider.html" class="nav-link-item pt-16 pb-16 line-bt not-link">
+                              <i class="icon icon-divider"></i>
+                              <span>Divider</span>
+                            </a></li>
+                            <li><a href="ui-language.html" class="nav-link-item pt-16 pb-16 not-link">
+                              <i class="icon icon-language"></i>
+                              <span>Language</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/rangle-slider.js"></script>
+    <script type="text/javascript" src="js/count-down.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/multiple-modal.js"></script>
+
+
+</body>
+
+</html>

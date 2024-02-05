@@ -1,0 +1,141 @@
+//settings
+$font-main-size: 13px;
+$font-main-line: 22px;
+$font-main-family: "Inter", sans-serif;
+$fontIcon: "icomoon";
+$fz-btn: 14px;
+$lh-btn: 16px;
+
+$h1-fs: 26px;
+$h1-lh: 36px;
+$h2-fs: 24px;
+$h2-lh: 32px;
+$h3-fs: 20px;
+$h3-lh: 28px;
+$h4-fs: 20px;
+$h4-lh: auto;
+$h5-fs: 18px;
+$h5-lh: 28px;
+$h6-fs: 15px;
+$h6-lh: 24px;
+// color
+$primary: #7980ff;
+$primary-2: #878dff;
+$primary-3: #a2a7ff;
+$primary-4: #bcc0ff;
+$primary-5: #d7d9ff;
+
+$primarySub: #f8f2e2;
+$secondary: #787982;
+$secondary2: #b9bac3;
+$white: #fff;
+$onSurface: #151515;
+$line: #e5e5e5;
+$black: #31394f;
+
+$info: #64bef1;
+$critical: #eb5a5a;
+$warning: #fcdb66;
+$success: #5fd788;
+$error: #f05a5a;
+$surface: #f5f5f5;
+
+$bright-pest: #3febf4;
+$pest: #34c8de;
+$bright-pink: #ff58a6;
+$pink: #ec4899;
+$yellow: #fbae16;
+$orange: #f9771d;
+$bright-green: #9af05d;
+$green: #45d2b2;
+$violet: #bb6cf9;
+$blue: #57a4ff;
+$grey-1: #e2e8f0;
+$grey-2: #f6f5f7;
+$soft-grey: #f8fafc;
+
+
+// hover
+$primary-hover: #656cfd;
+
+
+
+//rgba colors
+$rgba-primary: rgba(135, 59, 10, 0.1);
+$rgba-success: rgba(30, 127, 17, 0.1);
+$rgba-danger: rgba(225, 0, 0, 0.1);
+$rgba-warning: rgba(255, 138, 0, 0.1);
+$rgba-info: rgba(167, 2, 103, 0.1);
+$rgba-dark: rgba(27, 50, 95, 0.1);
+
+:root {
+    --surface: #f5f5f5;
+    --white: #fff;
+    --primary: #e55223;
+    --primary-bold: #5b2400;
+    --primary-btn: #e55223;
+    --secondary: #787982;
+    --secondary2: #b9bac3;
+    --success: #1e7f11;
+    --success2: #54b24c;
+    --danger: #e10000;
+    --warning: #ff8a00;
+    --info: #a70267;
+    --light: #e7e7e7;
+    --dark: #1b325f;
+    --disable: #d3b7a5;
+    --green: #143d33;
+    --green2: #c7f464;
+    --orange: #ff9c2e;
+    --orange2: #fa6900;
+    --orange3: #f9cdad;
+    --pink: #fe4365;
+    --purple: #542437;
+    --blue: #606dfa;
+    --blue2: #a7dbd8;
+    --blue3: #4ecdc4;
+    --blue4: #036564;
+    --dark2: #031634;
+    --bg-ip: #f7f7f7;
+    --shadow: 0px 15px 20px 0px rgba(201, 106, 40, 0.44);
+    --shadow2: 0px 1px 4px 0px rgba(0, 0, 0, 0.07) inset;
+    --shadow3: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    --shadow-box: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    --text-gray: #f3f3f3;
+    --dot: #6c6c78;
+    --text: #6f7582;
+    --text-2: #c9cbce;
+    --text-3: #343434;
+    --text-4: #d3d5da;
+    --text-5: #abadb2;
+    --line: #e5e5e5;
+    --line-2: #d9d9d9;
+    --line-3: #dbdbdb;
+    --line-rgba: rgba(255, 255, 255, 0.1);
+    //backdrop
+    --backdrop: rgb(21, 21, 21);
+    --bg-progress: rgba(21, 21, 21, 0.15);
+    // rgba colors
+    --rgba-primary: rgba(135, 59, 10, 0.1);
+    --rgba-success: rgba(30, 127, 17, 0.1);
+    --rgba-danger: rgba(225, 0, 0, 0.1);
+    --rgba-warning: rgba(255, 138, 0, 0.1);
+    --rgba-info: rgba(167, 2, 103, 0.1);
+    --rgba-dark: rgba(27, 50, 95, 0.1);
+    --rgba-disable: rgba(135, 59, 10, 0.1);
+    // liner garden colors
+    --liner-primary: linear-gradient(270deg, #e17e3e 0%, #873b0a 100%);
+    --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
+
+    --onSurface: #151515;
+
+    //hover
+    --primary-hover: #d54313;
+    --success-hover: #19770c;
+    --danger-hover: #b30808;
+    --warning-hover: #e37d05;
+    --info-hover: #91045a;
+    --light-hover: #d0caca;
+    --dark-hover: #15294f;
+    --disable-hover: #c4a896;
+}

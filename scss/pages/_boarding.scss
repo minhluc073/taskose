@@ -1,0 +1,111 @@
+.bg-boarding {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-boarding {
+    width: 195px;
+    height: 145px;
+}
+.logo-boarding {
+    width: 196px;
+    height: 195px;
+    margin: 20px auto 100px;
+}
+.title-boarding-box {
+    text-align: center;
+    padding: 0px 43px;
+    h1 {
+        color: $white;
+    }
+    p {
+        color: #f4e8dd;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+}
+
+.section-boarding-title {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
+.modal-noti-app {
+    .modal-dialog {
+        &.modal-dialog-centered {
+            margin: 0 auto;
+            max-width: 335px;
+        }
+        .modal-content {
+            padding: 0;
+            .top {
+                padding: 30px 30px 16px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+            }
+            .bottom {
+                li {
+                    padding: 16px;
+                    a {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.boarding-section {
+    padding-top: 60px;
+    background-color: #fa7a72;
+    .img-box {
+        max-width: 321px;
+        height: 356px;
+        margin: 0 auto;
+    }
+    .swiper{
+        z-index: unset;
+    }
+    .line-tes{
+    }
+}
+.boarding-content {
+    // margin: 0 -140px;
+    // border-top-left-radius: 333px;
+    // border-top-right-radius: 333px;
+    margin-top: -50px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 5;
+    background-color: var(--white);
+    h2 {
+        padding: 0 30px;
+    }
+    p {
+        padding: 0 50px;
+    }
+    svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        path{
+            fill: #fff;
+        }
+    }
+    .box-content{
+        position: relative;
+        z-index: 10;
+    }
+}

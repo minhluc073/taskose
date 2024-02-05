@@ -1,0 +1,129 @@
+.tab-content > .tab-pane {
+    display: none;
+    // transition: all 0.2s;
+    // transform: translateX(1rem);
+}
+.tab-content > .active {
+    display: block;
+    // transform: translateX(0rem);
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.fade {
+    transition: opacity 0.15s linear;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+.nav-item {
+    .nav-link {
+        // color: var(--primary-btn);
+        font-weight: 600;
+        &.active {
+            background: var(--white);
+            color: var(--surface);
+            border-color: var(--line);
+            border-bottom-color: transparent;
+        }
+        &.disabled {
+            color: var(--text-4);
+        }
+        &:hover {
+            border-color: transparent;
+        }
+    }
+}
+
+.nav-item {
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6px;
+        &.active {
+            color: var(--onSurface);
+            border-bottom: 2px solid var(--primary);
+
+            svg path {
+                fill: var(--primary-btn);
+            }
+        }
+    }
+}
+
+.product-tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    &.style2 {
+        border-bottom: 0;
+    }
+}
+.tab-3-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--line);
+    .nav-item {
+        .nav-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.service-tab {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-right: 16px;
+    margin-right: -16px;
+    .nav-item {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        .nav-link {
+            padding-bottom: 4px;
+            &.active {
+                border-width: 1px;
+            }
+        }
+    }
+}
+
+.tf-categories {
+    .nav-pills {
+        .nav-link {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
+            gap: 8px;
+            &.active {
+                background-color: var(--white);
+                color: var(--onSurface);
+            }
+        }
+    }
+    .tab-content {
+        width: 100%;
+        position: sticky;
+        top: 48px;
+        padding: 16px;
+    }
+}

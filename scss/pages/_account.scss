@@ -1,0 +1,91 @@
+.signin-area {
+    .box-image {
+        max-width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+}
+
+.auth-line {
+    position: relative;
+    @include flex(center, center);
+    margin: 32px 0px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 42%;
+        background: $line;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 42%;
+        height: 1px;
+        background: $line;
+    }
+}
+.noti-signin {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    @include flex(center, center);
+    gap: 8px;
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+}
+.create-pass-area {
+    .box-image {
+        max-width: 283px;
+        height: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+}
+.title-password {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.newpass-area {
+    .box-image {
+        max-width: 269px;
+        height: 269px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+}
+.forgot-area {
+    .box-image {
+        max-width: 295px;
+        height: 243px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.otp-area {
+    .box-image {
+        text-align: right;
+        img {
+            max-width: 244px;
+        }
+    }
+}
+
+.cb-signup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    label{
+        margin-bottom: 0;
+    }
+}

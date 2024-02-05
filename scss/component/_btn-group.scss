@@ -1,0 +1,60 @@
+.btn-group {
+    > .tf-btn:not(:last-child):not(.btn-split) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    > :not(.btn) + .tf-btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    > .btn-split:first-child,
+    &.btn-group > &.btn-group:not(:last-child) > .tf-btn {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .btn-split {
+        width: auto;
+        padding: 16px 8px;
+        background: var(--primary-bold);
+    }
+
+    .tf-btn {
+        border-color: transparent;
+        &:hover {
+            background: var(--primary-bold);
+            color: var(--white);
+        }
+    }
+}
+.btn-group-vertical {
+    .tf-btn {
+        border-color: transparent;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        // padding: 16px 40px;
+        &:hover {
+            background: var(--primary-bold);
+            color: var(--white);
+        }
+    }
+}
+
+.btn-group-vertical > .tf-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .tf-btn-group:not(:last-child) > .tf-btn {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .tf-btn ~ .tf-btn {
+    border-radius: 0;
+}
+.btn-group-vertical > .tf-btn:last-child {
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.round-14 {
+    border-radius: 14px;
+}

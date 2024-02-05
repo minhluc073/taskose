@@ -1,0 +1,62 @@
+.progress{
+    height: 12px;
+    border-radius: 99px;
+    background-color: var(--bg-progress);
+    border-color: transparent;
+    .progress-bar{
+        background-color: var(--primary);
+        border-radius: 99px;
+        &.success{
+            background-color: var(--success);
+            border-color: var(--success);
+        }
+        &.danger{
+            background-color: var(--danger);
+            border-color: var(--danger);
+        }
+        &.warning{
+            background-color: var(--warning);
+            border-color: var(--warning);
+        }
+        &.info{
+            background-color: var(--info);
+            border-color: var(--info);
+        }
+        &.dark{
+            background-color: var(--dark);
+            border-color: var(--dark);
+        }
+        &.liner-primary{
+            background: var(--liner-primary);
+        }
+    }
+    &.h-2{
+        height: 2px;
+    }
+    &.h-4{
+        height: 4px;
+    }
+    &.h-6{
+        height: 6px;
+    }
+    &.h-8{
+        height: 8px;
+    }
+    &.h-10{
+        height: 10px;
+    }
+    .progress-animated {
+        animation-duration: 5s;
+        animation-name: scrollanimated;
+        transition: all 5s ease 0s;
+    }
+}
+
+
+
+
+@keyframes scrollanimated {
+    0% {
+        width: 0;
+    }
+}

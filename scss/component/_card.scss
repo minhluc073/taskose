@@ -1,0 +1,26 @@
+// cards
+.card {
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-box);
+    border-color: transparent;
+    background-color: var(--white);
+    color: var(--onSurface);
+    .card-header {
+        background-color: transparent;
+        padding: 0;
+        border-color: transparent;
+        .card-title {
+            font-family: $font-main-family;
+            margin: 0;
+        }
+    }
+    .card-body {
+        padding: 0;
+    }
+}
+.card-style1 {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid var(--line);
+}
