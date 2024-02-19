@@ -1,17 +1,23 @@
 .list-view-item {
-    padding: 16px 0px;
+    padding: 16px 0px 12px;
+    &.style-1{
+        padding-left: 4px;
+    }
     a {
         display: flex;
         align-items: center;
-    }
-    &:not(:last-child) {
-        border-bottom: 1px solid var(--line);
-    }
-    &.style-2 {
         justify-content: space-between;
+
         .title {
             flex-grow: 1;
         }
+    }
+
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        padding-bottom: 0;
     }
 }
 
@@ -686,6 +692,25 @@
         background-color: var(--primary);
     }
 }
+// box icons
+.box-icon {
+    @include flex(center, center);
+    &.w-36 {
+        width: 36px;
+        height: 36px;
+        
+    }
+    &.w-24{ 
+        width: 24px;
+        height: 24px;
+    }
+    &.w-20{ 
+        width: 20px;
+        height: 20px;
+    }
+
+    
+}
 
 @keyframes rainbow {
     0% {
@@ -797,7 +822,6 @@
 .map {
     margin-left: -16px;
     margin-right: -16px;
-   
 }
 .box-order-fix {
     height: 70vh;

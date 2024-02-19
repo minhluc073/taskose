@@ -16,8 +16,10 @@
     background: var(--white);
 }
 .menubar-footer {
-    padding: 15px 0px 8px;
-
+    padding: 18px 26px;
+    box-shadow: 0px -8px 44px 0px rgb(20 25 44 / 8%);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
     .inner-bar {
         padding-left: 0;
         padding-right: 0;
@@ -25,46 +27,43 @@
         max-width: 1024px;
         margin-right: auto;
         margin-left: auto;
+        justify-content: space-between;
         align-items: center;
         li {
-            padding: 0;
-            width: 20%;
             a {
-                color: var(--secondary);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 4px;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 16px;
-                .icon {
-                    font-size: 20px;
-                    color: var(--secondary);
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    path {
+                        stroke: #464d61;
+                    }
                 }
             }
             &.active {
                 a {
-                    color: var(--onSurface);
-                    .icon {
-                        color: var(--primary);
+                    svg {
+                        path,
+                        rect {
+                            stroke: $primary;
+                        }
                     }
                 }
             }
         }
-        .action-home {
-            margin-top: -40px;
+        .action-add-task {
+            margin-top: -55px;
+            margin-left: -20px;
+            margin-right: -20px;
             a {
                 @include flex(center, center);
                 border-radius: 9999px;
-                width: 46px;
-                height: 46px;
-                background-color: var(--primary-btn);
-                box-shadow: var(--shadow);
-                margin: 0 auto;
+                width: 64px;
+                height: 64px;
+                background-color: $primary;
+
                 i {
-                    font-size: 20px;
-                    color: #fff;
+                    font-size: 24px;
+                    color: $white;
                 }
             }
         }
@@ -130,17 +129,17 @@
         margin-right: auto;
         margin-left: auto;
     }
-    .bottom-btn{
+    .bottom-btn {
         display: flex;
         align-items: center;
         gap: 18px;
         margin-top: 12px;
         padding-top: 12px;
         border-top: 1px solid var(--line);
-        .press-toggle{
+        .press-toggle {
             width: 44px;
             height: 44px;
-            @include flex(center,center);
+            @include flex(center, center);
             border-radius: 6px;
             border: 1px solid var(--line);
             flex-shrink: 0;

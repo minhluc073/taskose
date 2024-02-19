@@ -235,8 +235,8 @@ body {
     font-size: $font-main-size;
     line-height: $font-main-line;
     font-weight: 400;
-    background-color: var(--white);
-    color: var(--secondary);
+    background-color: $white;
+    color: $black;
     min-height: 100vh;
     width: 100%;
     // margin: 0 auto;
@@ -307,7 +307,7 @@ h4,
 h5,
 h6 {
     color: var(--onSurface);
-    font-weight: 600;
+    font-weight: 700;
     a {
         // color: $primary;
         &:hover {
@@ -358,9 +358,9 @@ input[type="color"] {
     line-height: 21px;
     padding: 16px 20px;
     border-radius: 12px;
-    border: 1px solid var(--line);
+    border: 1px solid transparent;
     color: var(--onSurface);
-    background-color: var(--white);
+    background-color: $soft-grey;
 }
 textarea {
     height: 140px;
@@ -397,7 +397,7 @@ input[type="color"]:focus {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-color: var(--onSurface);
+    border-color: $primary;
 }
 
 textarea::placeholder,
@@ -441,8 +441,8 @@ code {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     box-sizing: border-box;
 }
 .mw-wrapper {
@@ -470,6 +470,7 @@ code {
 .font-title-btn {
     font-size: 14px;
     line-height: 16px;
+    font-weight: 700;
 }
 .body-2 {
     font-size: 12px;
@@ -526,6 +527,12 @@ code {
 }
 
 // font-size:
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
 .fs-16 {
     font-size: 16px;
 }
@@ -774,6 +781,7 @@ code {
 .p-0 {
     padding: 0;
 }
+// background color
 .bg-primary {
     background-color: var(--primary) !important;
 }
@@ -804,22 +812,42 @@ code {
 .bg-surface {
     background-color: var(--surface);
 }
-.bg-secondary {
-    background-color: $line !important;
+
+.bg-grey-2 {
+    background-color: $grey-2;
 }
+
 // color text
 .text-white {
     color: var(--white) !important;
 }
 .text-black {
-    color: var(--onSurface) !important;
+    color: $black !important;
+}
+.text-black-2 {
+    color: $black !important;
+    opacity: 0.92;
+}
+.text-black-3 {
+    color: $black !important;
+    opacity: 0.9;
+}
+.text-black-4 {
+    color: $black !important;
+    opacity: 0.7;
+}
+.text-black-5 {
+    color: $black !important;
+    opacity: 0.6;
+}
+.text-black-6 {
+    color: $black !important;
+    opacity: 0.5;
 }
 .text-primary {
-    color: var(--primary) !important;
+    color: $primary !important;
 }
-.text-primary2 {
-    color: var(--primary-btn);
-}
+
 .text-secondary {
     color: var(--secondary) !important;
 }
@@ -833,7 +861,7 @@ code {
     color: var(--success) !important;
 }
 .text-danger {
-    color: var(--danger) !important;
+    color: $error !important;
 }
 .text-warning {
     color: var(--warning) !important;
@@ -888,11 +916,9 @@ code {
 .line-bt4 {
     border-bottom: 1px solid rgb(17, 17, 17, 0.1) !important;
 }
-.line4-bt {
-    border-bottom: 4px solid $surface;
-}
+
 .line-r {
-    border-right: 1px solid $line;
+    border-right: 1px solid $black;
 }
 .line-4 {
     height: 4px;
@@ -968,11 +994,12 @@ code {
 .radius-20 {
     border-radius: 20px;
 }
+
 .lr-radius-20 {
     border-radius: 20px 20px 0px 0px;
 }
 .app-content {
-    padding: 48px 0px 65px;
+    padding: 76px 0px 96px;
     &.style-1 {
         padding-top: 0;
     }

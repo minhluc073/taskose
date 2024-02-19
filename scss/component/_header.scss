@@ -2,37 +2,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 15px 12px;
+    padding: 24px;
     position: relative;
-    min-height: 48px;
+    // min-height: 48px;
     .icon {
-        height: 24px;
-        width: 24px;
         display: flex;
         align-items: center;
     }
 
     .left {
         position: absolute;
-        left: 20px;
-        top: 8px;
+        left: 24px;
+        top: 24px;
         .icon {
-            font-size: 18px;
-            color: var(--onSurface);
-            font-weight: 500;
+            width: 28px;
+            height: 28px;
+            font-size: 15px;
+            font-weight: 700;
         }
     }
     .right {
         position: absolute;
-        right: 20px;
-        top: 8px;
+        right: 24px;
+        top: 24px;
+        display: flex;
+        gap: 16px;
         .icon {
-            font-size: 22px;
-            color: var(--text-4);
+            width: 20px;
+            height: 28px;
+            font-size: 20px;
         }
-        .icon-home{
-            font-size: 24px;
-        }
+        // .icon-home {
+        //     font-size: 24px;
+        // }
     }
     &.absolute {
         position: absolute;

@@ -1,0 +1,22 @@
+.offcanvas {
+    &.offcanvas-bottom {
+        border-top: none;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+    .offcanvas-header {
+        padding: 24px;
+        &.style-1 {
+            padding-bottom: 19px;
+        }
+    }
+}
+
+.offcanvas-backdrop {
+    background-color: $backdrop;
+    &.show {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        opacity: 1;
+    }
+}

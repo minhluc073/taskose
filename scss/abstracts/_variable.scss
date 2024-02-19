@@ -26,11 +26,11 @@ $primary-4: #bcc0ff;
 $primary-5: #d7d9ff;
 
 $primarySub: #f8f2e2;
-$secondary: #787982;
+$secondary: rgba(49, 57, 79, 0.7);
 $secondary2: #b9bac3;
 $white: #fff;
 $onSurface: #151515;
-$line: #e5e5e5;
+$line: #31394f;
 $black: #31394f;
 
 $info: #64bef1;
@@ -54,11 +54,8 @@ $grey-1: #e2e8f0;
 $grey-2: #f6f5f7;
 $soft-grey: #f8fafc;
 
-
 // hover
 $primary-hover: #656cfd;
-
-
 
 //rgba colors
 $rgba-primary: rgba(135, 59, 10, 0.1);
@@ -67,6 +64,9 @@ $rgba-danger: rgba(225, 0, 0, 0.1);
 $rgba-warning: rgba(255, 138, 0, 0.1);
 $rgba-info: rgba(167, 2, 103, 0.1);
 $rgba-dark: rgba(27, 50, 95, 0.1);
+
+$backdrop: rgba(49, 57, 79, 0.12);
+
 
 :root {
     --surface: #f5f5f5;
@@ -113,7 +113,7 @@ $rgba-dark: rgba(27, 50, 95, 0.1);
     --line-3: #dbdbdb;
     --line-rgba: rgba(255, 255, 255, 0.1);
     //backdrop
-    --backdrop: rgb(21, 21, 21);
+    --backdrop: rgba(49, 57, 79, 0.12);
     --bg-progress: rgba(21, 21, 21, 0.15);
     // rgba colors
     --rgba-primary: rgba(135, 59, 10, 0.1);
