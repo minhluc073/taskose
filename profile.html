@@ -58,8 +58,8 @@
             </div>
             <a href="#" class="tf-btn primary">Edit Profile</a>
             <ul class="mt-32">
-                    <li class="list-view-item style-1 line-bt">
-                        <a href="location.html" class="gap-20">
+                    <li class="list-view-item style-1 line-bt" data-bs-toggle="offcanvas" data-bs-target="#upgradePremium" aria-controls="offcanvasBottom">
+                        <a href="javascript:void(0);" class="gap-20">
                             <div class="box-icon w-36 bg-grey-2 radius-12">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.7667 1.04938C11.4776 0.444472 12.5224 0.444472 13.2333 1.04938C13.7356 1.47685 14.4235 1.61369 15.0512 1.411C15.9395 1.12419 16.9047 1.52398 17.33 2.35489C17.6305 2.94207 18.2137 3.33174 18.8712 3.3847C19.8016 3.45965 20.5403 4.19836 20.6153 5.12879C20.6683 5.78628 21.0579 6.36946 21.6451 6.67C22.476 7.0953 22.8758 8.06048 22.589 8.94876C22.3863 9.57647 22.5231 10.2644 22.9506 10.7667C23.5555 11.4776 23.5555 12.5224 22.9506 13.2333C22.5231 13.7356 22.3863 14.4235 22.589 15.0512C22.8758 15.9395 22.476 16.9047 21.6451 17.33C21.0579 17.6305 20.6683 18.2137 20.6153 18.8712C20.5403 19.8016 19.8016 20.5403 18.8712 20.6153C18.2137 20.6683 17.6305 21.0579 17.33 21.6451C16.9047 22.476 15.9395 22.8758 15.0512 22.589C14.4235 22.3863 13.7356 22.5231 13.2333 22.9506C12.5224 23.5555 11.4776 23.5555 10.7667 22.9506C10.2644 22.5231 9.57647 22.3863 8.94876 22.589C8.06048 22.8758 7.0953 22.476 6.67 21.6451C6.36946 21.0579 5.78628 20.6683 5.12879 20.6153C4.19837 20.5403 3.45965 19.8016 3.3847 18.8712C3.33174 18.2137 2.94207 17.6305 2.35489 17.33C1.52398 16.9047 1.12419 15.9395 1.411 15.0512C1.61369 14.4235 1.47685 13.7356 1.04938 13.2333C0.444472 12.5224 0.444472 11.4776 1.04938 10.7667C1.47685 10.2644 1.61369 9.57647 1.411 8.94876C1.12419 8.06048 1.52398 7.0953 2.35489 6.67C2.94207 6.36946 3.33174 5.78628 3.3847 5.12879C3.45965 4.19837 4.19837 3.45965 5.12879 3.3847C5.78628 3.33174 6.36946 2.94207 6.67 2.35489C7.0953 1.52398 8.06048 1.12419 8.94876 1.411C9.57647 1.61369 10.2644 1.47685 10.7667 1.04938Z" fill="#64BEF1"/>
@@ -71,7 +71,7 @@
                                     <path d="M16 11H12V16L16 11Z" fill="#18E0FF"/>
                                 </svg>     
                             </div>
-                            <div class="font-title-btn title">
+                            <div class="font-title-btn text-black-2 title">
                                 Upgrade to Premium
                             </div>
                             <div class="box-icon w-20">
@@ -79,12 +79,12 @@
                             </div> 
                         </a>
                     </li>
-                    <li class="list-view-item style-1 line-bt" data-bs-toggle="modal" data-bs-target="#helpCenter">
+                    <li class="list-view-item style-1 line-bt" data-bs-toggle="offcanvas" data-bs-target="#helpCenter" aria-controls="offcanvasRight">
                         <a href="javascript:void(0);" class="gap-20">
                             <div class="box-icon w-36 bg-grey-2 radius-12">
                                 <i class="icon-life-buoy fs-20"></i>   
                             </div>
-                            <div class="font-title-btn title">
+                            <div class="font-title-btn text-black-2 title">
                                 Help Center
                             </div>
                             <div class="box-icon w-20">
@@ -98,7 +98,7 @@
                                 <i class="icon-star fs-20"></i>    
                                     
                             </div>
-                            <div class="font-title-btn title">
+                            <div class="font-title-btn text-black-2 title">
                                 Rate the App
                             </div>
                             <div class="box-icon w-20">
@@ -111,7 +111,7 @@
                             <div class="box-icon w-36 bg-grey-2 radius-12">
                                 <i class="icon-eye fs-20"></i>    
                             </div>
-                            <div class="font-title-btn title">
+                            <div class="font-title-btn text-black-2 title">
                                 Privacy Policy
                             </div>
                             <div class="box-icon w-20">
@@ -124,7 +124,7 @@
                             <div class="box-icon w-36 bg-grey-2 radius-12">
                                 <i class="icon-log-out text-danger fs-20"></i>   
                             </div>
-                            <div class="font-title-btn title text-danger">
+                            <div class="font-title-btn text-black-2 title text-danger">
                                 Log out
                             </div>
                             <div class="box-icon w-20">
@@ -134,7 +134,6 @@
                     </li>
             </ul>
         </div>
-        <a href="#offcanvasBottom" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" aria-controls="offcanvasBottom">Toggle bottom offcanvas</a>
 
     </div>
 
@@ -199,85 +198,161 @@
       </div>
     </div>
 
-    <div class="modal fade modalRight" id="helpCenter">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="header fixed-top line4-bt">
-                    <div class="left" data-bs-dismiss="modal">
-                      <a href="javascript:void(0);" class="icon"><i class="icon-back"></i></a>
-                    </div>
-                    <h6>Help Center</h6>  
-                </div> 
-                <div class="overflow-auto app-content style-2">
-                    <div class="tf-container">
-                        <h5 class="pt-16 pb-16">Frequently Asked Questions</h5>
-                        <ul class="loadmore-item line-top">
-                            <li class="fl-item pt-12 pb-12 text-black">
-                                I want to change my order
-                            </li>
-                            <li class="fl-item pt-12 pb-12 text-black">
-                                The item I received was not what I expected
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                Common mistakes when paying for orders
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                The driver hasn't delivered the order to me even though it's overdue
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                I want to get my canceled order back because the driver can't contact me
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                How to cancel an order?
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                I want to rate the delivery driver's attitude
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                when will i get my refund ?
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                How to cancel an order?
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                I want to rate the delivery driver's attitude
-                            </li>
-                            <li class="fl-item pb-12 pt-12 text-black">
-                                when will i get my refund ?
-                            </li>
-                        </ul>
-                        <div id="button-loadmore" class="line-top text-center text-black fw-6 pt-16 pb-16">
-                            See More 
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                    <path d="M3.41675 5.25L7.50008 9.33333L11.5834 5.25" stroke="#787982" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            
-                        </div>
-                    </div>
+
+    <!-- help center -->
+    <div class="offcanvas offcanvas-end full" id="helpCenter">
+        <div class="header fixed-top line-bt">
+            <div class="left" data-bs-dismiss="offcanvas">
+                <a href="javascript:void(0);" class="icon"><i class="icon-back"></i></a>
+            </div>
+            <h5>Help Center</h5>  
+        </div> 
+        <div class="overflow-auto app-content style-2">
+            <div class="tf-container">
+                <div class="mt-24 search-box">
+                    <a href="search.html" class="icon-left icon-search"></a>
+                    <input type="text" class="search-field" placeholder="Find your task">
                 </div>
-                
+                <ul class="pt-28 pb-24 line-bt">
+                    <li>
+                        <a href="#" class="d-flex align-items-center gap-16">
+                            <div class="font-title-btn flex-grow-1">Get started</div>
+                            <div class="box-icon w-20">
+                                <i class="icon-arr-r fs-14"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mt-24">
+                        <a href="#" class="d-flex align-items-center gap-16">
+                            <div class="font-title-btn flex-grow-1">How to Create Project</div>
+                            <div class="box-icon w-20">
+                                <i class="icon-arr-r fs-14"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mt-24">
+                        <a href="#" class="d-flex align-items-center gap-16">
+                            <div class="font-title-btn flex-grow-1">How to Create Task</div>
+                            <div class="box-icon w-20">
+                                <i class="icon-arr-r fs-14"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mt-24" data-bs-toggle="offcanvas" data-bs-target="#closeAccount" aria-controls="offcanvasBottom">
+                        <a href="#" class="d-flex align-items-center gap-16">
+                            <div class="font-title-btn flex-grow-1">Close Account</div>
+                            <div class="box-icon w-20">
+                                <i class="icon-arr-r fs-14"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pt-28 pb-24 line-bt">
+                    <h6>Get more questions?</h6>
+                    <p class="mt-8 body-2 text-black-5">You may also send a message to our customer support for further questions or information.</p>
+                    <a href="#" class="tf-btn outline-btn-primary mt-16">Get in touch with us</a>
+                </div>
+                <div class="pt-28">
+                    <h6>Chat with Us</h6>
+                    <p class="mt-8 body-2 text-black-5">We are here to assist you better via online chat.</p>
+                </div>
+                <div class="footer-fixed button">
+                    <a href="#" class="tf-btn primary">Start your 14-days trial</a>
+    
+                </div>
+              
             </div>
         </div>
+        
+                
     </div>
-
-    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-        <div class="offcanvas-header">
+    <!-- upgrade premium -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="upgradePremium" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header style-1">
           <h5 class="offcanvas-title" id="offcanvasBottomLabel">Upgrade To Premium</h5>
-          <span class="icon-close2" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+          <span class="icon-close2 icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
         </div>
-        <div class="offcanvas-body small">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis minus recusandae quo, voluptate accusamus et porro tenetur dolore sequi eaque quas commodi nihil repudiandae aliquid nobis, non sed aliquam.</p>
+        <div class="offcanvas-body pb-100">
+            <p class="body-2 text-black-4">Get the premium feature and get the unlimited access to the app. Upgrade your account and get full access.</p>
+            <ul class="pt-28 pb-24 line-bt">
+                <li>
+                    <a href="#" class="d-flex align-items-center gap-16">
+                        <div class="box-icon w-40 bg-grey-2 radius-12">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.27002 6.95996L12 12.01L20.73 6.95996" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22.08V12" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>   
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="font-title-btn text-black-2">Unlimited Projects</div>
+                            <p class="mt-4 text-caption-2 text-black-5">No limit projects</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mt-24">
+                    <a href="#" class="d-flex align-items-center gap-16">
+                        <div class="box-icon w-40 bg-grey-2 radius-12">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M21 21V19C20.9949 18.1172 20.6979 17.2608 20.1553 16.5644C19.6126 15.868 18.8548 15.3707 18 15.15M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7ZM3 21V19C3 17.9391 3.42143 16.9217 4.17157 16.1716C4.92172 15.4214 5.93913 15 7 15H11C12.0609 15 13.0783 15.4214 13.8284 16.1716C14.5786 16.9217 15 17.9391 15 19V21H3Z" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>      
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="font-title-btn text-black-2">Unlimited Members</div>
+                            <p class="mt-4 text-caption-2 text-black-5">No limit member invitation</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="mt-24">
+                    <a href="#" class="d-flex align-items-center gap-16">
+                        <div class="box-icon w-40 bg-grey-2 radius-12">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 8L12 3L7 8" stroke="#7980FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 3V15" stroke="#7980FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                  
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="font-title-btn text-black-2">Unlimited file uploads</div>
+                            <p class="mt-4 text-caption-2 text-black-5">No limit number of files and size</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mt-30 pb-32">
+                <li class="box-cart-select act-suggest bg-soft-grey radius-12">
+                    <label for="cart1" class="flex-grow-1">
+                        <div class="d-flex gap-4 font-title-btn">
+                            1 Month Plan  <span class="fw-4">/ $ 6.99 only</span>
+                        </div>
+                        <p class="mt-8 text-caption-2 text-black-5">Billed monthly, Cancel anytime</p>
+                    </label>
+                    <input type="radio" name="radio" id="cart1" class="radio-check flex-shrink-0">
+                </li>
+                <li class="mt-16 box-cart-select act-suggest active bg-soft-grey radius-12">
+                    <label for="cart2" class="flex-grow-1">
+                        <div class="d-flex gap-4 font-title-btn">
+                            1 Month Plan  <span class="fw-4">/ $ 6.99 only</span>
+                        </div>
+                        <p class="mt-8 text-caption-2 text-black-5">Billed monthly, Cancel anytime</p>
+                    </label>
+                    <input type="radio" name="radio" id="cart2" class="radio-check flex-shrink-0" checked>
+                </li>
+            </ul>
+            <div class="footer-fixed button">
+                <a href="#" class="tf-btn primary">Start your 14-days trial</a>
+
+            </div>
+          
+        </div>
+    </div>
+    <!-- close account -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="closeAccount" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-body">
+            <h5>Close Account</h5>
+            <p class="body-2 text-black-3 text-center">Dummy content lorem velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco malinentah exercitation..</p>
+            <a href="#" class="mt-24 tf-btn danger" data-bs-dismiss="offcanvas" aria-label="Close">Close Account</a>
+            <div class="font-title-btn mt-20 text-black-5 text-center" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</div>
         </div>
     </div>
 

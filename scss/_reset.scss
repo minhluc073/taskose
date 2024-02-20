@@ -527,10 +527,10 @@ code {
 }
 
 // font-size:
-.fs-12{
+.fs-12 {
     font-size: 12px;
 }
-.fs-14{
+.fs-14 {
     font-size: 14px;
 }
 .fs-16 {
@@ -544,6 +544,9 @@ code {
 }
 .fs-22 {
     font-size: 22px;
+}
+.fs-24 {
+    font-size: 24px;
 }
 //
 .fw-3 {
@@ -606,6 +609,9 @@ code {
 .mt-26 {
     margin-top: 26px;
 }
+.mt-28 {
+    margin-top: 28px;
+}
 .mt-30 {
     margin-top: 30px;
 }
@@ -651,6 +657,10 @@ code {
 .mb-20 {
     margin-bottom: 20px;
 }
+.mb-120 {
+    margin-bottom: 120px;
+}
+
 .mr--16 {
     margin-right: -16px;
 }
@@ -687,6 +697,9 @@ code {
 }
 .pt-20 {
     padding-top: 20px !important;
+}
+.pt-28 {
+    padding-top: 28px;
 }
 .pt-30 {
     padding-top: 30px;
@@ -741,6 +754,9 @@ code {
 .pb-30 {
     padding-bottom: 30px !important;
 }
+.pb-32 {
+    padding-bottom: 32px !important;
+}
 .pb-40 {
     padding-bottom: 40px !important;
 }
@@ -752,6 +768,9 @@ code {
 }
 .pb-80 {
     padding-bottom: 80px;
+}
+.pb-100 {
+    padding-bottom: 100px !important;
 }
 .pb-200 {
     padding-bottom: 200px;
@@ -815,6 +834,9 @@ code {
 
 .bg-grey-2 {
     background-color: $grey-2;
+}
+.bg-soft-grey {
+    background-color: $soft-grey;
 }
 
 // color text
@@ -902,7 +924,7 @@ code {
     border-top: 1px solid var(--line) !important;
 }
 .line-bt {
-    border-bottom: 1px solid var(--line) !important;
+    border-bottom: 1px solid $line !important;
 }
 .line-bt-dashed {
     border-bottom: 1px dashed var(--line) !important;
@@ -991,6 +1013,9 @@ code {
 .radius-12 {
     border-radius: 12px;
 }
+.radius-16 {
+    border-radius: 16px;
+}
 .radius-20 {
     border-radius: 20px;
 }
@@ -1004,7 +1029,7 @@ code {
         padding-top: 0;
     }
     &.style-2 {
-        padding-bottom: 0px;
+        padding-bottom: 100px;
     }
     &.style-3 {
         padding-top: 70px;
@@ -1012,17 +1037,9 @@ code {
     &.style-4 {
         padding-top: 60px;
     }
-    &.style-5 {
-        padding-top: 0;
-        padding-bottom: 160px;
-    }
-    &.style-6 {
-        padding-bottom: 80px;
-    }
+    
+    
     &.style-7 {
         padding-bottom: 96px;
     }
-}
-.overflow-auto {
-    overflow: auto;
 }

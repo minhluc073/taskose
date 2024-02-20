@@ -232,13 +232,13 @@
       $(this).toggleClass("active");
     });
 
-    $(".active-suggest").click(function () {
-      $(".active-suggest.active").removeClass("active");
+    $(".act-suggest").click(function () {
+      $(".act-suggest.active").removeClass("active");
       $(this).toggleClass("active");
     });
 
-    $(".active-suggest2").click(function () {
-      $(".active-suggest2.active").removeClass("active");
+    $(".act-suggest2").click(function () {
+      $(".act-suggest2.active").removeClass("active");
       $(this).toggleClass("active");
     });
   };
