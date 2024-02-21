@@ -427,7 +427,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--onSurface);
+  color: #31394F;
   font-weight: 700;
 }
 button,
@@ -872,6 +872,10 @@ code {
   padding-top: 20px !important;
 }
 
+.pt-24 {
+  padding-top: 24px;
+}
+
 .pt-28 {
   padding-top: 28px;
 }
@@ -937,7 +941,7 @@ code {
 }
 
 .pb-24 {
-  padding-bottom: 24px;
+  padding-bottom: 24px !important;
 }
 
 .pb-30 {
@@ -984,6 +988,11 @@ code {
 .py-12 {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .px-16 {
@@ -1165,7 +1174,7 @@ code {
 }
 
 .line-bt2 {
-  border-bottom: 1px solid var(--line-rgba) !important;
+  border-bottom: 1px solid rgba(49, 57, 79, 0.1) !important;
 }
 
 .line-bt3 {
@@ -1292,10 +1301,11 @@ code {
   padding-bottom: 100px;
 }
 .app-content.style-3 {
-  padding-top: 70px;
+  padding-bottom: 0px;
 }
 .app-content.style-4 {
-  padding-top: 60px;
+  padding-top: 0;
+  padding-top: 100px;
 }
 .app-content.style-7 {
   padding-bottom: 96px;
@@ -3733,14 +3743,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 /*------------ modal ---------------- */
-.modal .modal-dialog {
-  max-width: 100%;
-  margin: 15px;
-}
 .modal .modal-dialog .modal-content {
   border-radius: 12px;
   border: 0;
-  background: var(--white);
+  background: #fff;
   box-shadow: var(--shadow-box);
 }
 .modal .modal-dialog .modal-content .modal-body {
@@ -3831,9 +3837,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .modal.modalLeft.show .modal-dialog {
   transform: translate(0, 0) !important;
 }
-.modal.modalCenter .modal-dialog-centered {
-  margin: 0 auto;
-  max-width: 273px;
+.modal .modal-dialog-centered {
+  margin-left: 22px;
+  margin-right: 22px;
 }
 .modal.fade {
   transition: opacity 0.3s linear;
@@ -3886,7 +3892,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: normal;
 }
 .modal .cart-footer {
-  background-color: var(--white);
+  background-color: #fff;
   pointer-events: auto;
 }
 .modal .cart-footer .top {
@@ -3913,36 +3919,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .modal-background {
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .modal-notiCenter {
-  background-color: var(--white);
-  border-radius: 8px;
-  backdrop-filter: blur(11px);
+  background-color: #fff;
+  border-radius: 12px;
   pointer-events: auto;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
 }
-.modal-notiCenter .top {
-  padding: 16px;
+.modal-notiCenter .title {
+  padding: 20px 50px;
+  text-align: center;
   border-bottom: 1px solid var(--line);
 }
-.modal-notiCenter .bottom {
-  display: flex;
-}
-.modal-notiCenter .bottom a {
-  display: inline-block;
-  font-weight: 600;
-  padding: 11px 16px;
-  width: 100%;
-  text-align: center;
-}
-.modal-notiCenter .bottom a:first-child {
-  border-right: 1px solid var(--line);
+.modal-notiCenter .font-title-btn {
+  padding: 20px;
 }
 
 .modal-setting {
   pointer-events: auto;
-  background-color: var(--white);
+  background-color: #fff;
   border-radius: 12px 12px 0px 0px;
   backdrop-filter: blur(11px);
   pointer-events: auto;
@@ -3954,7 +3951,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .modal-boxContent .item a {
   border-radius: 12px;
-  background-color: var(--white);
+  background-color: #fff;
   display: flex;
   padding: 18px 16px;
   justify-content: center;
@@ -3964,7 +3961,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .modal-up {
-  background: var(--white);
+  background: #fff;
   pointer-events: auto;
   width: 100%;
   height: 80vh;
@@ -4004,7 +4001,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: var(--white);
+  background-color: #fff;
 }
 .modal-up.full .content {
   padding-top: 60px;
@@ -4055,6 +4052,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .offcanvas .offcanvas-header .icon-close-popup {
   justify-content: flex-end;
+  font-size: 12px;
 }
 .offcanvas .offcanvas-body {
   padding: 0px 24px;
@@ -4998,30 +4996,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .item-check {
-  padding: 16px 0px;
+  padding: 24px 0px 16px;
   display: flex;
   justify-content: space-between;
-  font-weight: 600;
   color: var(--onSurface);
+  border-bottom: 1px solid rgba(49, 57, 79, 0.1);
 }
 .item-check.active {
-  color: var(--primary);
+  color: #7980ff;
 }
 .item-check.active .icon {
   display: block;
 }
 .item-check .icon {
-  color: var(--primary);
+  color: #7980ff;
   display: none;
-}
-.item-check .icon::before {
-  font-size: 12px;
-}
-.item-check:not(:last-child) {
-  border-bottom: 1px solid var(--line);
-}
-.item-check:last-child {
-  padding-bottom: 0;
+  font-size: 24px;
 }
 
 .loadmore-item .fl-item {
@@ -5374,7 +5364,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 32px;
 }
 .box-card-bank.active {
-  border-color: var(--primary);
+  border-color: #7980ff;
 }
 
 .box-cart-select {
@@ -5466,7 +5456,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .wrap-success {
-  background: var(--primary);
+  background: #7980ff;
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -5636,7 +5626,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   box-shadow: 0px 4px 20px 0px rgba(158, 158, 158, 0.25);
 }
 .circle-box.bg-circle {
-  background-color: var(--primary);
+  background-color: #7980ff;
 }
 
 .box-icon {
@@ -5697,7 +5687,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 60px;
 }
 .preload-container .spinner-circle .spinner-child::before {
-  background-color: var(--primary);
+  background-color: #7980ff;
 }
 
 .preload-logo {
@@ -6021,7 +6011,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   right: 14px;
   top: 16px;
   font-size: 14px;
-  color: var(--primary);
+  color: #7980ff;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

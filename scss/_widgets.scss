@@ -22,29 +22,21 @@
 }
 
 .item-check {
-    padding: 16px 0px;
+    padding: 24px 0px 16px;
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
     color: var(--onSurface);
+    border-bottom: 1px solid $line-2;
     &.active {
-        color: var(--primary);
+        color: $primary;
         .icon {
             display: block;
         }
     }
     .icon {
-        color: var(--primary);
+        color: $primary;
         display: none;
-        &::before {
-            font-size: 12px;
-        }
-    }
-    &:not(:last-child) {
-        border-bottom: 1px solid var(--line);
-    }
-    &:last-child {
-        padding-bottom: 0;
+        font-size: 24px;
     }
 }
 
@@ -407,7 +399,7 @@
         height: 32px;
     }
     &.active {
-        border-color: var(--primary);
+        border-color: $primary;
     }
 }
 .box-cart-select {
@@ -416,7 +408,7 @@
     justify-content: space-between;
     padding: 16px;
     border: 1px solid transparent;
-   
+
     &.active {
         border-color: $primary;
     }
@@ -496,7 +488,7 @@
 }
 
 .wrap-success {
-    background: var(--primary);
+    background: $primary;
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -667,7 +659,7 @@
         box-shadow: 0px 4px 20px 0px rgba(158, 158, 158, 0.25);
     }
     &.bg-circle {
-        background-color: var(--primary);
+        background-color: $primary;
     }
 }
 // box icons
@@ -726,7 +718,7 @@
         height: 60px;
         .spinner-child {
             &::before {
-                background-color: var(--primary);
+                background-color: $primary;
             }
         }
     }
@@ -1095,7 +1087,7 @@
             right: 14px;
             top: 16px;
             font-size: 14px;
-            color: var(--primary);
+            color: $primary;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
