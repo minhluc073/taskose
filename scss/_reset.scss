@@ -838,6 +838,9 @@ code {
 .bg-surface {
     background-color: var(--surface);
 }
+.bg-text{
+    background-color: $black !important;
+}
 
 .bg-grey-2 {
     background-color: $grey-2;
@@ -862,8 +865,7 @@ code {
     opacity: 0.9;
 }
 .text-black-4 {
-    color: $black !important;
-    opacity: 0.7;
+    color: rgba(49, 57, 79, 0.7);
 }
 .text-black-5 {
     color: $black !important;

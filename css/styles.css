@@ -1052,6 +1052,10 @@ code {
   background-color: var(--surface);
 }
 
+.bg-text {
+  background-color: #31394F !important;
+}
+
 .bg-grey-2 {
   background-color: #f6f5f7;
 }
@@ -1079,8 +1083,7 @@ code {
 }
 
 .text-black-4 {
-  color: #31394F !important;
-  opacity: 0.7;
+  color: rgba(49, 57, 79, 0.7);
 }
 
 .text-black-5 {
@@ -1565,7 +1568,7 @@ code {
   margin: 0 auto;
   left: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: #fff;
 }
 
 .header-search {
@@ -1623,6 +1626,36 @@ code {
   position: relative;
   z-index: 10;
   top: 80px;
+}
+
+.header-profile {
+  padding: 22px 24px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-profile .left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header-profile .left .avt {
+  max-width: 36px;
+  height: 36px;
+  position: relative;
+}
+.header-profile .left .avt img {
+  border-radius: 6px;
+}
+.header-profile .left .avt .dot-danger {
+  top: -3px;
+  right: -3px;
+  position: absolute;
+  border: 1px solid #fff;
+}
+.header-profile .right {
+  display: flex;
+  gap: 16px;
 }
 
 /*------------ tabs ---------------- */
@@ -2850,7 +2883,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--white);
+  background: #fff;
 }
 .footer-fixed.button {
   padding: 20px 24px 32px;
@@ -4999,8 +5032,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 24px 0px 16px;
   display: flex;
   justify-content: space-between;
-  color: var(--onSurface);
   border-bottom: 1px solid rgba(49, 57, 79, 0.1);
+}
+.item-check.language-val {
+  gap: 14px;
+}
+.item-check.language-val .img {
+  width: 24px;
+  height: 16px;
+}
+.item-check.language-val .title {
+  flex-grow: 1;
 }
 .item-check.active {
   color: #7980ff;
@@ -5011,7 +5053,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .item-check .icon {
   color: #7980ff;
   display: none;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .loadmore-item .fl-item {
@@ -5394,11 +5436,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
 }
 
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 1000px;
-  background-color: #e74141;
+.dot-danger {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #f05a5a;
+}
+
+.box-noti {
+  width: 40px;
+  height: 40px;
 }
 
 .ip-address[type=text] {
@@ -6658,6 +6705,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.box-result-help {
+  padding: 45px 0px 40px;
+}
+.box-result-help .image {
+  max-width: 154px;
+  height: 154px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------- chat ---------- */

@@ -25,8 +25,17 @@
     padding: 24px 0px 16px;
     display: flex;
     justify-content: space-between;
-    color: var(--onSurface);
     border-bottom: 1px solid $line-2;
+    &.language-val {
+        gap: 14px;
+        .img {
+            width: 24px;
+            height: 16px;
+        }
+        .title {
+            flex-grow: 1;
+        }
+    }
     &.active {
         color: $primary;
         .icon {
@@ -36,7 +45,7 @@
     .icon {
         color: $primary;
         display: none;
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -429,11 +438,15 @@
     }
 }
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 1000px;
-    background-color: #e74141;
+.dot-danger {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: $error;
+}
+.box-noti {
+    width: 40px;
+    height: 40px;
 }
 
 .ip-address[type="text"] {

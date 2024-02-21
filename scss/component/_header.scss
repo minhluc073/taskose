@@ -55,7 +55,6 @@
     }
 }
 .header-style2 {
-    // min-height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -72,10 +71,9 @@
     z-index: 1020;
     max-width: 1024px;
     margin: 0 auto;
-    // padding: 20px;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: $white;
 }
 
 .header-search {
@@ -136,4 +134,35 @@
     position: relative;
     z-index: 10;
     top: 80px;
+}
+
+//
+.header-profile {
+    padding: 22px 24px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        .avt {
+            max-width: 36px;
+            height: 36px;
+            position: relative;
+            img {
+                border-radius: 6px;
+            }
+            .dot-danger {
+                top: -3px;
+                right: -3px;
+                position: absolute;
+                border: 1px solid $white;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        gap: 16px;
+    }
 }
