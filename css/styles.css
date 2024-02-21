@@ -1655,6 +1655,7 @@ code {
 }
 .header-profile .right {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -5446,6 +5447,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-noti {
   width: 40px;
   height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #242B42;
 }
 
 .ip-address[type=text] {
