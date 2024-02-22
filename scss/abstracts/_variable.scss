@@ -32,7 +32,14 @@ $white: #fff;
 $onSurface: #151515;
 $line: rgba(49, 57, 79, 0.08);
 $line-2: rgba(49, 57, 79, 0.1);
-$black: #31394F;
+$black: #31394f;
+$black-2: #464d61;
+
+// priority color 
+$priority-1: #45D2B2;
+$priority-2: #57A4FF;
+$priority-3: #BB6CF9;
+
 
 $info: #64bef1;
 $critical: #eb5a5a;
@@ -46,11 +53,16 @@ $pest: #34c8de;
 $bright-pink: #ff58a6;
 $pink: #ec4899;
 $yellow: #fbae16;
+$yellow-2: #FFBB57;
+
 $orange: #f9771d;
+$orange-2: #FF9357;
 $bright-green: #9af05d;
 $green: #45d2b2;
 $violet: #bb6cf9;
 $blue: #57a4ff;
+$blue-2: #57A4FF;
+
 $grey-1: #e2e8f0;
 $grey-2: #f6f5f7;
 $soft-grey: #f8fafc;
@@ -72,6 +84,9 @@ $rgba-info: rgba(167, 2, 103, 0.1);
 $rgba-dark: rgba(27, 50, 95, 0.1);
 
 $backdrop: rgba(49, 57, 79, 0.12);
+$bg-progress: rgb(0, 0, 0, 0.16);
+$bg-progress-1: #45d2b2;
+$bg-progress-2: #64BEF1;
 
 :root {
     --surface: #f5f5f5;

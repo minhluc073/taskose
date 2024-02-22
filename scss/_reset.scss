@@ -501,7 +501,10 @@ code {
     font-size: 8px;
     line-height: 12px;
 }
-
+.text-caption-4 {
+    font-size: 7px;
+    line-height: 12px;
+}
 // .text-justify {
 //     font-size: 14px;
 //     font-weight: 500;
@@ -527,6 +530,9 @@ code {
 }
 
 // font-size:
+.fs-10 {
+    font-size: 10px;
+}
 .fs-12 {
     font-size: 12px;
 }
@@ -809,10 +815,10 @@ code {
 }
 // background color
 .bg-primary {
-    background-color: var(--primary) !important;
+    background-color: $primary !important;
 }
 .bg-white {
-    background-color: var(--white) !important;
+    background-color: $white !important;
 }
 .bg-success {
     background-color: var(--success) !important;
@@ -838,7 +844,7 @@ code {
 .bg-surface {
     background-color: var(--surface);
 }
-.bg-text{
+.bg-text {
     background-color: $black !important;
 }
 
@@ -847,6 +853,8 @@ code {
 }
 .bg-soft-grey {
     background-color: $soft-grey;
+}
+.text-priority-1 {
 }
 
 // color text
@@ -874,6 +882,10 @@ code {
 .text-black-6 {
     color: $black !important;
     opacity: 0.5;
+}
+.text-black-7 {
+    color: $black !important;
+    opacity: 0.88;
 }
 .text-primary {
     color: $primary !important;
@@ -925,6 +937,7 @@ code {
 .text-5 {
     color: var(--text-5);
 }
+
 // opacity
 .opacity-5 {
     opacity: 0.5;
@@ -1047,8 +1060,7 @@ code {
         padding-top: 0;
         padding-top: 100px;
     }
-
-    &.style-7 {
-        padding-bottom: 96px;
+    &.style-5 {
+        padding-top: 97px;
     }
 }
