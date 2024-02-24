@@ -720,16 +720,22 @@
         width: 20px;
         height: 20px;
     }
+    &.w-52 {
+        width: 52px;
+        height: 52px;
+    }
 }
 .box-card-project {
     border-radius: 10px;
+    .box-progress {
+        margin-top: 17px;
+    }
 
     &.style-1 {
         display: block;
         padding: 12px 16px;
         border: 0.3px solid #31394f;
         .box-progress {
-            margin-top: 17px;
             .progress-bar {
                 background-color: $bg-progress-1;
             }
@@ -741,26 +747,135 @@
         background-color: $black-2;
         border-radius: 50px;
     }
+
+    &.style-2 {
+        padding: 12px 16px;
+        border-radius: 10px;
+        .meta-list {
+            li {
+                opacity: 0.8;
+                color: $white;
+            }
+            .dot {
+                background-color: $white;
+                opacity: 1;
+            }
+        }
+        .progress {
+            .progress-bar {
+                background-color: $white;
+            }
+        }
+        .progress-desc {
+            .title {
+                color: $white;
+                opacity: 0.8;
+            }
+            .value {
+                color: $white;
+            }
+        }
+    }
+    &.item1 {
+        .box-icon {
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.16);
+            i {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        .box-icon-flag {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 6px 4px;
+            font-size: 8px;
+            line-height: 12px;
+            font-weight: 500;
+            background: rgba(0, 0, 0, 0.16);
+            color: $white;
+            border-radius: 4px;
+        }
+        .list-stacked {
+            .member {
+                background-color: $white;
+                font-size: 8px;
+                line-height: 12px;
+                color: #34c8de;
+            }
+            img {
+                margin-top: -5px;
+            }
+        }
+        .list-stacked .avatar {
+            border-color: #43bbf9;
+        }
+    }
+
+    &.bg-1 {
+        background: linear-gradient(212.04deg, rgba(9, 171, 255, 0.9) 0%, rgba(67, 187, 249, 0.9) 100%);
+    }
+    &.bg-2 {
+        background: linear-gradient(249.26deg, rgba(175, 72, 255, 0.81) 0%, rgba(186, 114, 243, 0.9) 100%);
+    }
+    &.bg-3 {
+        background: linear-gradient(250.35deg, rgba(255, 170, 46, 0.81) 0%, rgba(255, 187, 87, 0.9) 98.49%);
+    }
 }
 .box-recent-project {
-    padding: 12px 16px;
+    padding: 16px 10px;
     border-radius: 12px;
     background-color: $white;
     box-shadow: 0px 2px 36px rgb(16 21 35 / 7%);
     .top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .left-inner {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            .box-icon {
-                background-color: #6aceca;
-                border-radius: 50%;
+        .box-icon {
+            background-color: #6aceca;
+            border-radius: 50%;
+            flex-shrink: 0;
+            &.type-1 {
+                background-color: #f1c28d;
             }
         }
     }
+    .box-image {
+        border-radius: 8px;
+        overflow: hidden;
+        height: 135px;
+        img {
+            object-fit: cover;
+        }
+    }
+    .bottom {
+        gap: 28px;
+        .box-progress {
+            flex-grow: 1;
+        }
+        .progress {
+            margin-top: 5px;
+            background-color: #f6f5f7;
+            .progress-bar {
+                background-color: #64bef1;
+            }
+        }
+    }
+    &.style-1 {
+        padding: 16px;
+        .box-image {
+            height: 177px;
+        }
+    }
+}
+.meta-item {
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    background-color: $grey-2;
+    font-size: 10px;
+    line-height: 16px;
+    color: rgb(128, 132, 146);
 }
 
 .box-task {
@@ -800,6 +915,37 @@
             }
         }
     }
+    &.style-2 {
+        box-shadow: $shadow-1;
+        padding: 16px 18px;
+        background-color: $white;
+        @include flex(center, space-between);
+        gap: 16px;
+        .box-icon {
+            color: $primary;
+            font-size: 26px;
+            background-color: rgb(121, 128, 255, 0.15);
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .list-stacked {
+            .member {
+                background-color: #ef946d;
+                font-size: 8px;
+                color: $white;
+            }
+        }
+    }
+    &.style-3 {
+        box-shadow: $shadow-1;
+        padding: 12px 18px 16px 20px;
+        background-color: $white;
+        .top {
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(70, 77, 97, 0.16);
+        }
+    }
 }
 .tag-status {
     border-radius: 4px;
@@ -817,6 +963,78 @@
     &.type-3 {
         background-color: rgb(187, 108, 249, 0.15);
         color: $priority-3;
+    }
+}
+.box-progress-task {
+    background-size: cover;
+    border-radius: 16px;
+    padding: 24px 30px 24px 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    box-shadow: $shadow-2;
+    .circle_percent {
+        flex-shrink: 0;
+        background-color: #7f84ed;
+        font-size: 90px;
+        .circle_inbox {
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+            background-color: rgb(142, 148, 249);
+        }
+        .percent_text {
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+            font-weight: 500;
+        }
+        &:after {
+            background-color: $white;
+        }
+        .round_per {
+            background-color: $white;
+        }
+    }
+    .content {
+        h5 {
+            padding-right: 10px;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .icon-more {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 20px;
+        color: $white;
+    }
+}
+.icon-more {
+    &.vertical {
+        transform: rotate(90deg);
+    }
+}
+
+.box-filter {
+    background-color: $soft-grey;
+    border: 1px solid rgba(49, 57, 79, 0.1);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $black;
+    &.type-1 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        min-width: 102px;
+        padding: 12px;
     }
 }
 
@@ -1240,7 +1458,7 @@
     padding: 14px;
     background: var(--white);
     border-radius: 16px;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: $shadow-1;
     .top {
         display: flex;
         // align-items: center;

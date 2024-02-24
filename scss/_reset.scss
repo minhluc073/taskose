@@ -436,6 +436,12 @@ dl dt {
 code {
     color: var(--primary-btn);
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+}
 
 .tf-container {
     max-width: 1024px;
@@ -876,8 +882,7 @@ code {
     color: rgba(49, 57, 79, 0.7);
 }
 .text-black-5 {
-    color: $black !important;
-    opacity: 0.6;
+    color: rgb(131, 136, 149);
 }
 .text-black-6 {
     color: $black !important;
@@ -984,6 +989,24 @@ code {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+.grid-layout-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "item1 item2"
+        "item1 item3";
+
+    .item1{
+        grid-area: item1;
+    }
+    .item2{
+        grid-area: item2;
+    }
+    .item3{
+        grid-area: item3;
+    }
+}
+
 // gap
 .gap-4 {
     gap: 4px !important;

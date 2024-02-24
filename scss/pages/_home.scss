@@ -8,3 +8,41 @@
     border-top-right-radius: 24px;
     background-color: $white;
 }
+.banner-project {
+    height: 176px;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+    }
+}
+.list-desc-project {
+    display: flex;
+    align-items: center;
+    .box-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 35%;
+    }
+    .box-right {
+        flex-grow: 1;
+        .add-member {
+            margin-left: 12px;
+            padding-top: 4px;
+            font-size: 18px;
+            line-height: 18px;
+            .icon {
+                color: $primary;
+            }
+        }
+        .tag-status {
+            color: $white;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 3px;
+            min-width: 48px;
+        }
+    }
+}
