@@ -616,12 +616,12 @@ select {
   line-height: 18px;
 }
 
-.body-3 {
+.body-4 {
   font-size: 12px;
   line-height: 16px;
 }
 
-.body-4 {
+.body-5 {
   font-size: 12px;
   line-height: 12px;
 }
@@ -1962,12 +1962,9 @@ select {
   background: var(--dark-hover);
 }
 .tf-btn.disable {
-  background: var(--disable);
-  border: 1px solid var(--disable);
-  color: #fff;
-}
-.tf-btn.disable:hover {
-  background: var(--disable-hover);
+  background: rgba(121, 128, 255, 0.12);
+  border: 1px solid transparent;
+  color: #7980ff;
 }
 .tf-btn.light-btn-primary {
   background: var(--rgba-primary);
@@ -2092,23 +2089,11 @@ select {
   border: 1px solid rgba(49, 57, 79, 0.08);
 }
 .tf-btn.icon {
-  color: var(--onSurface);
-  font-weight: 600;
-  border: 1px solid rgba(49, 57, 79, 0.08);
-  padding: 13px;
+  gap: 4px;
 }
-.tf-btn.icon .img-icon {
-  width: 20px;
-  height: 20px;
-}
-.tf-btn.icon .icon {
-  font-size: 20px;
-}
-.tf-btn.icon .icon.icon-tw {
-  color: #03a9f4;
-}
-.tf-btn.icon .icon.icon-x {
-  color: var(--onSurface);
+.tf-btn.icon i {
+  font-size: 16px;
+  color: #fff;
 }
 
 .lg-zoom-in {
@@ -3010,6 +2995,41 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: rgba(49, 57, 79, 0.6);
 }
 
+.uploadfile .add-file {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: #7980ff;
+  border-radius: 8px;
+  width: 48px;
+  cursor: pointer;
+}
+.uploadfile .add-file::before {
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 4px 6px 4px 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  content: "Add";
+  display: flex;
+  align-items: center;
+  border: 1px solid #7980ff;
+  background-color: #7980ff;
+  color: #fff;
+}
+.uploadfile .add-file::after {
+  position: absolute;
+  content: "\e92d";
+  font-family: "icomoon";
+  color: #fff;
+  font-size: 12px;
+  left: 6px;
+  top: 6px;
+}
+
 /*------------ footer ---------------- */
 .footer-fixed {
   position: fixed;
@@ -3719,7 +3739,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #fff;
 }
 .radio-check.success:checked {
-  border-color: rgb(243, 245, 246);
+  border-color: rgb(202, 240, 217);
   background-color: #5fd788;
 }
 
@@ -6263,6 +6283,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 12px;
 }
 
+.list-task-item {
+  position: relative;
+}
+.list-task-item .content-task {
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  border: 1px solid transparent;
+  border-left: 8px solid #e2e8f0;
+}
+.list-task-item input {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+.list-task-item input:checked ~ label {
+  border-left: 8px solid #5fd788;
+}
+
 @keyframes rainbow {
   0% {
     left: 0%;
@@ -6808,6 +6848,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .list-desc-project {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 .list-desc-project .box-left {
   display: flex;
@@ -6827,13 +6868,45 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .list-desc-project .box-right .add-member .icon {
   color: #7980ff;
 }
-.list-desc-project .box-right .tag-status {
+.list-desc-project .box-right .task-status {
   color: #fff;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  padding: 3px;
-  min-width: 48px;
+  padding: 4px 9px;
+  border-radius: 8px;
+}
+.list-desc-project .box-right .task-status.style-1 {
+  border-radius: 4px;
+  font-size: 8px;
+  line-height: 12px;
+}
+.list-desc-project .box-right .task-status.type-1 {
+  background-color: #ec4899;
+}
+.list-desc-project .box-right .task-status.type-2 {
+  background-color: #34c8de;
+}
+.list-desc-project .box-right .task-status.type-3 {
+  background-color: #f9771d;
+}
+
+.uploadfile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.uploadfile .file-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  padding: 2px 8px;
+  border: 1px solid #7980ff;
+  border-radius: 8px;
+  color: #7980ff;
 }
 
 /*--------- profile ---------- */

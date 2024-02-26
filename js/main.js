@@ -148,6 +148,16 @@
       }
     });
   };
+  /* input file 
+  ------------------------------------------------------------------------------------- */
+  var flcustominput = function () {
+    $("input[type=file]").change(function (e) {
+      $(this)
+        .parents(".uploadfile")
+        .find(".file-name")
+        .text(e.target.files[0].name);
+    });
+  };
 
   /* back Page
   ------------------------------------------------------------------------------------- */
@@ -397,6 +407,7 @@
     hidePopupNoti();
     progressCircle();
     clickModalSecond();
+    flcustominput();
     preloader();
   });
 })(jQuery);

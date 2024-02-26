@@ -1037,6 +1037,27 @@
         padding: 12px;
     }
 }
+.list-task-item {
+    position: relative;
+    .content-task {
+        display: flex;
+        padding: 15px 20px;
+        border-radius: 8px;
+        background-color: $soft-grey;
+        border: 1px solid transparent;
+        border-left: 8px solid $grey-1;
+    }
+    input {
+        position: absolute;
+        top: 12px;
+        right: 17px;
+        &:checked {
+            ~ label {
+                border-left: 8px solid $success;
+            }
+        }
+    }
+}
 
 @keyframes rainbow {
     0% {
