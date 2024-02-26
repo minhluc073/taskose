@@ -1,8 +1,8 @@
 .dropdown-menu {
     padding: 20px;
-    background: var(--white);
-    border-radius: 10px;
-    box-shadow: var(--shadow3);
+    background: $white;
+    border-radius: 12px;
+    box-shadow: $shadow-1;
     border-color: transparent;
     min-width: 114px;
     z-index: 1010;
@@ -16,7 +16,7 @@
             font-size: 20px;
         }
         &:active {
-            background-color: var(--white);
+            background-color: $white;
         }
         &:hover {
             background-color: transparent;
@@ -153,4 +153,41 @@
 }
 .min-w-auto {
     min-width: auto;
+}
+
+// dropdown with backdrop
+.dropdown-backdrop.show:before {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $backdrop;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    content: "";
+    z-index: 1;
+}
+
+.dropdown-menu.dropdown-setting-task {
+    box-shadow: none;
+    border-top-right-radius: 0;
+    top: 20px !important;
+    .dropdown-item {
+        padding: 16px 0px !important;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        color: rgba(49, 57, 79, 1);
+        opacity: 0.9;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(49, 57, 79, 0.1);
+        }
+        &:first-child {
+            padding-top: 0px !important;
+        }
+        &:last-child {
+            padding-bottom: 0px !important;
+        }
+    }
 }

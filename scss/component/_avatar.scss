@@ -102,6 +102,27 @@
         }
         .member {
             @include flex(center, center);
+            &.type-1 {
+                background-color: rgba(52, 200, 222, 1);
+                color: $white;
+                font-size: 8px;
+                line-height: 10px;
+                font-weight: 400;
+            }
+            &.type-2 {
+                background-color: rgba(236, 72, 153, 1);
+                color: $white;
+                font-size: 8px;
+                line-height: 10px;
+                font-weight: 400;
+            }
+            &.type-3 {
+                background-color: rgba(69, 210, 178, 1);
+                color: $white;
+                font-size: 8px;
+                line-height: 10px;
+                font-weight: 400;
+            }
         }
     }
 }

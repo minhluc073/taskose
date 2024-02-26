@@ -1040,7 +1040,7 @@
 .list-task-item {
     position: relative;
     .content-task {
-        display: flex;
+        display: block;
         padding: 15px 20px;
         border-radius: 8px;
         background-color: $soft-grey;
@@ -1054,6 +1054,36 @@
         &:checked {
             ~ label {
                 border-left: 8px solid $success;
+            }
+        }
+    }
+}
+
+.box-assign {
+    padding: 16px;
+    padding-right: 0;
+    background-color: $soft-grey;
+    border-radius: 12px;
+}
+.list-view-task {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    padding-right: 0;
+    .left {
+        width: 75%;
+    }
+    .right {
+        width: 25%;
+    }
+    &.style-1 {
+    }
+}
+.box-view-task {
+    li {
+        &:first-child {
+            .list-view-task {
+                padding-top: 0;
             }
         }
     }

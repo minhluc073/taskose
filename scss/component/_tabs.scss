@@ -17,6 +17,7 @@
 .nav-tabs {
     border-bottom: 0;
 }
+
 .nav-item {
     .nav-link {
         // color: var(--primary-btn);
@@ -36,94 +37,49 @@
     }
 }
 
-.nav-item {
-    .nav-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 6px;
-        &.active {
-            color: var(--onSurface);
-            border-bottom: 2px solid var(--primary);
-
-            svg path {
-                fill: var(--primary-btn);
-            }
-        }
-    }
+.wrapper-tab-task {
+    background-color: $soft-grey;
+    border-radius: 16px;
+    padding: 4px;
 }
 
-.product-tabs {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--line);
-    &.style2 {
-        border-bottom: 0;
-    }
-}
-.tab-3-item {
+.task-tab {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-bottom: 1px solid var(--line);
-    .nav-item {
-        .nav-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    position: relative;
+    z-index: 1;
+    .nav-link {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgba(49, 57, 79, 0.6);
+        padding: 12px 0px;
+        text-align: center;
+        border-radius: 12px;
+        margin: 0;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 12px;
+        }
+        &.active {
+            background-color: $white;
+            border-color: $white;
+            border-radius: 12px;
+            color: $primary;
+            font-weight: 700;
         }
     }
 }
-
-.service-tab {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    padding-right: 16px;
-    margin-right: -16px;
-    .nav-item {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 18px;
-        .nav-link {
-            padding-bottom: 4px;
-            &.active {
-                border-width: 1px;
-            }
-        }
-    }
-}
-
-.tf-categories {
-    .nav-pills {
-        .nav-link {
-            img {
-                width: 40px;
-                height: 40px;
-            }
-            color: var(--secondary);
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 18px;
-            background-color: var(--surface);
-            border-bottom: 1px solid var(--line);
-            border-radius: 0;
-            padding: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            white-space: nowrap;
-            gap: 8px;
-            &.active {
-                background-color: var(--white);
-                color: var(--onSurface);
-            }
-        }
-    }
-    .tab-content {
-        width: 100%;
-        position: sticky;
-        top: 48px;
-        padding: 16px;
-    }
+.item-slide-effect {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    background-color: $white;
+    border-radius: 12px;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
 }

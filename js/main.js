@@ -387,6 +387,29 @@
       });
     }
   };
+    /* tab slide 
+  ------------------------------------------------------------------------------------- */
+  var tabSlide = function () {
+    if ($(".tab-slide").length > 0) {
+      var $1 = $(".tab-slide li.active").width();
+      var $2 = $(".tab-slide li.active").position().left;
+      $(".nav-item-slide").css({
+        width: $1,
+        transform: "translateX(" + $2 + "px)",
+      });
+      $(".tab-slide li").on("click", function () {
+        var itemTab = $(this).parent().find("li");
+        $(itemTab).removeClass("active");
+        $(this).addClass("active");
+        var $3 = $(this).width();
+        var $4 = $(this).position().left;
+        var sideEffect = $(this).parent().find(".item-slide-effect");
+        $(sideEffect).css({ width: $3, transform: "translateX(" + $4 + "px)" });
+      });
+    }
+  };
+
+
 
   $(function () {
     showPass();
@@ -408,6 +431,7 @@
     progressCircle();
     clickModalSecond();
     flcustominput();
+    tabSlide();
     preloader();
   });
 })(jQuery);

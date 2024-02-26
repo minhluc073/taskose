@@ -1,0 +1,51 @@
+.wrap-task-accordion {
+    .accordion-item {
+        border: 0;
+        .list-task-item {
+            input {
+                top: 22px;
+            }
+        }
+    }
+}
+
+.header-task {
+    position: relative;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 36px;
+    &::after {
+        position: absolute;
+        left: 0;
+        background-size: 18px;
+    }
+    .title-task {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        .num {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            font-size: 10px;
+            line-height: 16px;
+            @include flex(center, center);
+            &.type-1 {
+                color: $pink;
+                border: 1px solid $pink;
+            }
+            &.type-2 {
+                color: $orange;
+                border: 1px solid $orange;
+            }
+            &.type-3 {
+                color: $success;
+                border: 1px solid $success;
+            }
+        }
+    }
+    &:not(.collapsed) {
+        background: none;
+        box-shadow: none;
+    }
+}
