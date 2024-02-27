@@ -295,6 +295,11 @@
     $(".language-val").click(function () {
       $(".text-val-language").text($(this).text());
     });
+
+    $(".val-access").click(function (event) {
+      $(".text-val-access").text($(this).find(".title-access").text());
+      $(".desc-val-access").text($(this).find(".desc-access").text());
+    });
   };
 
   /* load more
@@ -387,7 +392,7 @@
       });
     }
   };
-    /* tab slide 
+  /* tab slide 
   ------------------------------------------------------------------------------------- */
   var tabSlide = function () {
     if ($(".tab-slide").length > 0) {
@@ -408,8 +413,6 @@
       });
     }
   };
-
-
 
   $(function () {
     showPass();

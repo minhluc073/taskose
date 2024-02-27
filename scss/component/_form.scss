@@ -1,6 +1,9 @@
 // input
 .form-control {
     border-color: transparent;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(49, 57, 79, 0.9);
     &:focus {
         box-shadow: unset;
         border-color: var(--onSurface) !important;
@@ -13,16 +16,18 @@
 
 .input-icon {
     position: relative;
+
     .form-control {
         padding-left: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         border-radius: 12px;
-        border-color: var(--line);
     }
     .icon {
         position: absolute;
         top: 19px;
         left: 20px;
-        font-size: 22px;
+        font-size: 20px;
         color: var(--text-4);
     }
     .box-view-hide {
@@ -398,7 +403,7 @@
         font-size: 14px;
         line-height: 16px;
         font-weight: 500;
-        color: $black;
+        color: rgba(49, 57, 79, 0.8);
         padding: 12px;
         padding-left: 40px;
         padding-right: 30px;
@@ -415,6 +420,26 @@
         right: 16px;
         z-index: 8;
         color: rgb(49, 57, 79, 0.6);
+    }
+    &.style-1 {
+        background-color: $soft-grey;
+        border-radius: 12px;
+        .icon {
+            left: 20px;
+            top: 10px;
+        }
+        .tf-select {
+            padding: 14px;
+            padding-left: 48px;
+            padding-right: 20px;
+        }
+        &::after {
+            content: "\e91d";
+            transform: rotate(270deg);
+            font-size: 12px;
+            right: 20px;
+            top: 12px;
+        }
     }
 }
 .uploadfile {
