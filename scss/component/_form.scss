@@ -415,9 +415,9 @@
         content: "\e91a";
         position: absolute;
         font-family: $fontIcon;
-        font-size: 14px;
-        top: 14px;
-        right: 16px;
+        font-size: 16px;
+        top: 13px;
+        right: 14px;
         z-index: 8;
         color: rgb(49, 57, 79, 0.6);
     }
@@ -439,6 +439,12 @@
             font-size: 12px;
             right: 20px;
             top: 12px;
+        }
+    }
+    &.style-2 {
+        min-width: 85px;
+        .tf-select {
+            padding-left: 20px;
         }
     }
 }

@@ -20,8 +20,20 @@
             position: absolute;
             bottom: 0;
             right: 4px;
-            border: 2px solid #fff;
-            background: #0c9100;
+            border: 2px solid $white;
+            background: $success;
+        }
+        .danger {
+            position: absolute;
+            width: 12px;
+            min-width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 4px;
+            border: 2px solid $white;
+            background: rgba(240, 90, 90, 1);
         }
     }
 }
@@ -44,6 +56,16 @@
     width: 27px;
     min-width: 27px;
     height: 27px;
+}
+.avt-32 {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+}
+.avt-36 {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
 }
 .avt-40 {
     width: 40px;

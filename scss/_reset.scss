@@ -494,6 +494,10 @@ select {
     font-size: 12px;
     line-height: 12px;
 }
+.body-6 {
+    font-size: 13px;
+    line-height: 22px;
+}
 
 .text-caption {
     font-size: 11px;
@@ -582,11 +586,22 @@ select {
 }
 // spacing
 //margin
+.my-12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.mx-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .mt-2 {
     margin-top: 2px !important;
 }
 .mt-4 {
     margin-top: 4px !important;
+}
+.mt-5 {
+    margin-top: 5px !important;
 }
 .mt-6 {
     margin-top: 6px;
@@ -615,7 +630,7 @@ select {
 .mt-20 {
     margin-top: 20px;
 }
-.mt-22{
+.mt-22 {
     margin-top: 22px;
 }
 .mt-24 {

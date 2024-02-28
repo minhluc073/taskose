@@ -79,6 +79,31 @@
     }
 }
 
+.num-task {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    font-size: 10px;
+    line-height: 16px;
+    @include flex(center, center);
+    &.type-1 {
+        color: $pink;
+        border: 1px solid $pink;
+    }
+    &.type-2 {
+        color: $orange;
+        border: 1px solid $orange;
+    }
+    &.type-3 {
+        color: $success;
+        border: 1px solid $success;
+    }
+    &.type-4 {
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
 .box-empty-task {
     margin-top: 75px;
     p {
@@ -173,4 +198,87 @@
             transform: rotate(90deg);
         }
     }
+}
+.box-select-role {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    padding-left: 16px;
+    background-color: $soft-grey;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    .box-icon {
+        border-radius: 8px;
+        background-color: rgba(121, 128, 255, 0.06);
+    }
+    .content {
+        p {
+            margin-top: 2px;
+        }
+    }
+    &.active {
+        border-color: $primary;
+        position: relative;
+        .box-icon {
+            background-color: $primary;
+            svg path {
+                stroke: $white;
+            }
+        }
+        &::after {
+            position: absolute;
+            content: "\e93b";
+            font-family: $fontIcon;
+            top: 20px;
+            right: 20px;
+            color: $primary;
+            font-size: 15px;
+        }
+    }
+}
+
+.box-noti-task {
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: $white;
+    box-shadow: 0px 4px 36px 0px rgba(16, 21, 35, 0.05);
+    padding: 16px;
+    padding-right: 14px;
+    .content {
+        .title {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(49, 57, 79, 0.92);
+            font-weight: 700;
+            span {
+                font-weight: 400;
+                color: rgba(49, 57, 79, 0.7);
+            }
+        }
+        p {
+            font-size: 12px;
+            line-height: 20px;
+            color: rgba(49, 57, 79, 0.7);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .dot {
+                width: 4px;
+                height: 4px;
+                display: inline-block;
+                border-radius: 100px;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.box-empty-noti {
+    margin-top: 116px;
+}
+.box-empty-inbox,
+.box-empty-inbox .tf-btn {
+    margin-top: 100px;
 }
