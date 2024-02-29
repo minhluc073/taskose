@@ -1,67 +1,95 @@
 .message-box {
     position: relative;
     input {
-        border-radius: 8px;
-        padding: 8px 16px;
-        border: 1px solid var(--line);
-        color: var(--secondary);
-        background-color: var(--white);
-        font-size: 14px;
+        padding: 24px;
+        padding-left: 99px;
+        padding-right: 80px;
+        border: 1px solid $white;
+        background-color: $white;
+        font-size: 13px;
         font-weight: 400;
-        line-height: 18px;
+        line-height: 22px;
+        border-radius: 0;
+        &:focus {
+            border-color: $white;
+        }
     }
     .btn-message {
         position: absolute;
-        right: 12px;
+        width: 48px;
+        height: 48px;
+        background-color: $soft-grey;
+        border-radius: 50%;
+        @include flex(center, center);
+        right: 20px;
         top: 12px;
-        svg path {
-            fill: var(--primary);
-        }
+    }
+    .box-left {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
 }
 .bubble {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    img {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-    }
     p {
-        padding: 12px 16px;
-        font-size: 14px;
-        line-height: 18px;
-        color: var(--onSurface);
-        border-radius: 20px;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 22px;
+        border-radius: 100px;
+        width: fit-content;
     }
     .time {
-        color: var(--text-5);
-        font-size: 12px;
-        line-height: 120%;
+        color: rgba(49, 57, 79, 0.6);
+        font-size: 10px;
+        line-height: 16px;
+        margin-bottom: 3px;
+        display: inline-block;
     }
     &.bubble-you {
-        gap: 8px;
-        margin-bottom: 14px;
-        margin-right: 50px;
+        margin-bottom: 22px;
 
         p {
-            background-color: var(--line);
+            color: rgba(49, 57, 79, 0.92);
+            background-color: $white;
+            border-bottom-left-radius: 30px;
+            padding-right: 40px;
+            padding-left: 20px;
+        }
+        .time {
+            margin-left: 20px;
         }
     }
     &.bubble-me {
-        margin-bottom: 14px;
-        justify-content: flex-end;
-        margin-left: 80px;
+        margin-bottom: 16px;
         .content {
+            text-align: right;
             p {
-                background-color: var(--white);
+                background-color: $primary;
+                color: $white;
+                margin-left: auto;
+                padding-right: 13px;
+                padding-left: 25px;
             }
             .time {
-                text-align: end;
-                display: block;
+                margin-right: 16px;
             }
         }
+    }
+}
+
+.box-buble-me {
+    .start {
+        border-bottom-right-radius: 30px;
+    }
+    .middle {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .end {
+        border-top-right-radius: 30px;
     }
 }
 
@@ -83,18 +111,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 12px 20px;
     max-width: 1024px;
     margin: 0 auto;
-    .inner {
-        display: flex;
-        gap: 12px;
-        justify-content: space-between;
-        align-items: center;
-        .message-box {
-            flex-grow: 1;
-        }
-    }
+}
+
+.img-latest-chat {
+    border-radius: 16px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
 }
 
 //--------------- inbox -----------
@@ -176,4 +201,46 @@
             }
         }
     }
+}
+
+.wd-file-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    .box-icon {
+        border-radius: 8px;
+        &.type-1 {
+            background-color: rgba(154, 240, 93, 0.18);
+            svg path {
+                stroke: #9af05d;
+            }
+        }
+        &.type-2 {
+            background-color: rgba(255, 88, 166, 0.18);
+            svg path {
+                fill: #ff58a6;
+            }
+        }
+        &.type-3 {
+            background-color: rgba(251, 174, 22, 0.18);
+            svg path {
+                stroke: #fbae16;
+            }
+        }
+        &.type-4 {
+            background-color: rgba(63, 235, 244, 0.18);
+            svg path {
+                fill: #3febf4;
+            }
+        }
+    }
+}
+
+.fixed-message {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -8px 44px 0px rgba(20, 25, 44, 0.05);
 }

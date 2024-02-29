@@ -192,23 +192,23 @@
         hours;
 
       var domMessage =
-        '<div class="bubble bubble-me">' +
+        '<div class="bubble bubble-me box-buble-me">' +
         '<div class="content">' +
-        "<p>" +
-        messValue +
-        "</p>" +
         '<span class="time">' +
         realTime +
         "</span>" +
+        '<p class="start">' +
+        messValue +
+        "</p>" +
         "</div>" +
         "</div>";
 
       if (messValue.length > 0) {
-        var appendMess = $(".chat-area").append(domMessage);
+        $(".chat-area").append(domMessage);
       }
 
       window.scrollTo(0, document.body.scrollHeight);
-      var clearMess = ipMessage.val("");
+        ipMessage.val("");
     });
   };
   /* gallery

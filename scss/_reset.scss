@@ -716,6 +716,11 @@ select {
     padding: 16px;
 }
 
+.py-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 .pt-12 {
     padding-top: 12px;
 }
@@ -752,6 +757,7 @@ select {
 .pt-65 {
     padding-top: 65px;
 }
+
 
 .pb-4 {
     padding-bottom: 4px !important;
@@ -802,6 +808,7 @@ select {
 .pb-80 {
     padding-bottom: 80px;
 }
+
 .pb-100 {
     padding-bottom: 100px !important;
 }
@@ -866,7 +873,7 @@ select {
     background-color: var(--disable) !important;
 }
 .bg-surface {
-    background-color: var(--surface);
+    background-color: $soft-grey;
 }
 .bg-text {
     background-color: $black !important;
@@ -900,7 +907,8 @@ select {
     color: rgba(49, 57, 79, 0.7);
 }
 .text-black-5 {
-    color: rgb(131, 136, 149);
+    // color: rgb(131, 136, 149);
+    color: rgba(49, 57, 79, 0.6);
 }
 .text-black-6 {
     color: $black !important;

@@ -17,8 +17,11 @@
         padding: 14px;
     }
     &.btn-sm {
-        padding: 7px 12px;
-        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 23px;
+        border-radius: 8px;
     }
     // color
     &.primary {
@@ -231,7 +234,6 @@
             color: $white;
         }
     }
-
 }
 .lg-zoom-in {
     display: none;
