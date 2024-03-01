@@ -282,3 +282,111 @@
 .box-empty-inbox .tf-btn {
     margin-top: 100px;
 }
+
+// calendar
+.fc-direction-ltr {
+    box-shadow: 0px 4px 40px 0px rgba(16, 21, 35, 0.06);
+    border-radius: 12px;
+}
+.fc {
+    .fc-toolbar-title {
+        font-size: 18px;
+        line-height: 28px;
+        color: $black;
+    }
+    .fc-toolbar.fc-header-toolbar {
+        padding: 14px 18px 18px;
+        margin: 0;
+    }
+
+    .fc-toolbar-chunk {
+        display: flex;
+        align-items: center;
+    }
+    .fc-button-primary:hover {
+        background-color: transparent;
+        color: $primary;
+        border-color: transparent;
+    }
+    .fc-col-header-cell-cushion {
+        color: rgba(49, 57, 79, 0.7);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .fc-today-button:hover,
+    .fc-button-primary {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+        font-size: 12px;
+        line-height: 12px;
+        &:disabled {
+            opacity: 1;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+    .fc-prev-button,
+    .fc-next-button {
+        background-color: $white;
+        border-color: $white;
+        color: rgba(49, 57, 79, 0.5);
+        padding: 0;
+        outline: none;
+        outline-offset: 0;
+        &:focus,
+        &:not(:disabled):active {
+            background-color: transparent;
+            border-color: transparent;
+            color: $primary;
+            box-shadow: none;
+        }
+        &:not(:disabled):active:focus {
+            box-shadow: none;
+        }
+    }
+    .fc-next-button {
+        margin-left: 4px !important;
+    }
+    .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+        min-height: auto;
+    }
+    .fc-daygrid-day-top {
+        justify-content: center;
+        opacity: 1 !important;
+    }
+    .fc-daygrid-day-number {
+        color: rgba(49, 57, 79, 0.7);
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .fc-daygrid-day.fc-day-today {
+        background-color: transparent;
+        position: relative;
+        .fc-daygrid-day-top {
+            &::after {
+                position: absolute;
+                content: "";
+                width: 28px;
+                height: 28px;
+                background-color: $primary;
+                border-radius: 50%;
+            }
+        }
+        .fc-daygrid-day-number {
+            color: $white;
+        }
+    }
+    .fc-daygrid-day-frame {
+        @include flex(center, center);
+    }
+    .fc-scroller-liquid-absolute {
+        padding-top: 24px;
+    }
+}
+.fc-theme-standard .fc-scrollgrid,
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: 0;
+}

@@ -1,0 +1,46 @@
+.wrapper-successfully {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background-color: $primary;
+
+    .wrap-content {
+        max-width: 276px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1 {
+            color: $white;
+        }
+        .desc {
+            color: $white;
+            opacity: 0.7;
+        }
+    }
+    .footer-fixed {
+        background-color: $primary;
+    }
+}
+
+.box-success {
+    width: 178px;
+    height: 178px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @include flex(center, center);
+    .children {
+        width: 127px;
+        height: 127px;
+        border-radius: 50%;
+        @include flex(center, center);
+        background-color: $primary;
+        .icon {
+            font-size: 50px;
+            color: $white;
+        }
+    }
+}

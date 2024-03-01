@@ -1,7 +1,18 @@
 .bg-boarding {
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 }
+
+.banner-boarding-section {
+    max-width: 375px;
+    min-height: 351px;
+    margin-left: auto;
+    margin-right: auto;
+    &.style-2 {
+        min-height: 314px;
+    }
+}
+
 .img-boarding {
     width: 195px;
     height: 145px;
@@ -64,17 +75,15 @@
 }
 
 .boarding-section {
-    padding-top: 60px;
-    background-color: #fa7a72;
     .img-box {
         max-width: 321px;
         height: 356px;
         margin: 0 auto;
     }
-    .swiper{
+    .swiper {
         z-index: unset;
     }
-    .line-tes{
+    .line-tes {
     }
 }
 .boarding-content {
@@ -100,12 +109,71 @@
         bottom: 0;
         width: 100%;
         height: 300px;
-        path{
+        path {
             fill: #fff;
         }
     }
-    .box-content{
+    .box-content {
         position: relative;
         z-index: 10;
+    }
+}
+
+.box-boarding-fixed {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: $primary;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    right: 16px;
+    padding: 34px 24px 32px;
+
+    .swiper-pagination {
+        margin-top: 38px;
+        position: unset;
+    }
+    .tf-btn.inline {
+        display: inline-flex;
+    }
+}
+
+.content-boarding-sw {
+    text-align: center;
+    h1 {
+        max-width: 256px;
+        margin: 0 auto;
+        color: $white;
+    }
+    p {
+        max-width: 250px;
+        margin: 18px auto 0px;
+        color: $white;
+        font-size: 12px;
+        line-height: 20px;
+        opacity: 0.7;
+    }
+}
+.banner-boarding-style-3 {
+    text-align: center;
+    margin: 90px 24px 80px;
+    .logo {
+        width: 63px;
+        height: 63px;
+    }
+    .title {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+    p {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: rgba(49, 57, 79, 0.6);
     }
 }
