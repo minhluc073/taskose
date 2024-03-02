@@ -398,6 +398,7 @@ input[type="color"]:focus {
     -moz-box-shadow: none;
     box-shadow: none;
     border-color: $primary;
+    background-color: $soft-grey;
 }
 
 textarea::placeholder,
@@ -590,6 +591,10 @@ select {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+.my-22{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
 .mx-20 {
     margin-left: 20px;
     margin-right: 20px;
@@ -656,6 +661,9 @@ select {
 }
 .mt-45 {
     margin-top: 45px;
+}
+.mt-48{
+    margin-top: 48px;
 }
 .mt-60 {
     margin-top: 60px;
@@ -757,7 +765,6 @@ select {
 .pt-65 {
     padding-top: 65px;
 }
-
 
 .pb-4 {
     padding-bottom: 4px !important;
@@ -1074,6 +1081,9 @@ select {
 }
 .mh-full {
     min-height: 100vh;
+}
+.rounded-50{
+    border-radius: 50%;
 }
 .rolate-90 {
     transform: rotate(90deg);

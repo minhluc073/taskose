@@ -692,6 +692,10 @@
 // box icons
 .box-icon {
     @include flex(center, center);
+    &.w-32 {
+        width: 32px;
+        height: 32px;
+    }
     &.w-34 {
         width: 34px;
         height: 34px;
@@ -955,6 +959,19 @@
     &.type-3 {
         background-color: rgb(187, 108, 249, 0.15);
         color: $priority-3;
+    }
+    &.type-4 {
+        background-color: rgba(95, 215, 136, 0.2);
+        color: $success;
+    }
+    &.type-5 {
+        background-color: rgba(252, 219, 102, 0.2);
+        color: rgba(252, 219, 102, 1);
+        ;
+    }
+    &.type-6 {
+        background-color: rgba(226, 232, 240, 0.4);
+        color: rgba(143, 147, 158, 1);
     }
 }
 .box-progress-task {

@@ -153,6 +153,13 @@
                 line-height: 10px;
                 font-weight: 400;
             }
+            &.type-4 {
+                background-color: $primary;
+                color: $white;
+                font-size: 8px;
+                line-height: 10px;
+                font-weight: 400;
+            }
         }
     }
 }

@@ -44,3 +44,87 @@
         }
     }
 }
+
+.auth-line {
+    position: relative;
+    @include flex(center, center);
+    color: rgba(70, 77, 97, 0.7);
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 1px;
+        width: 30%;
+        background: $line-2;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 30%;
+        height: 1px;
+        background: $line-2;
+    }
+}
+
+.signIn-area {
+    .auth-line {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+}
+.signUp-area {
+    .auth-line {
+        margin-top: 46px;
+        margin-bottom: 43px;
+    }
+}
+
+.btn-social-icon {
+    width: 80px;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid $line-2;
+    @include flex(center, center);
+    .img-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+.cb-signup {
+    display: flex;
+    gap: 12px;
+    input {
+        flex-shrink: 0;
+        border-radius: 2px;
+    }
+    label {
+        color: rgba(70, 77, 97, 0.9);
+
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+}
+
+.box-choose-type-pass {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    background-color: $soft-grey;
+    padding: 12px 16px;
+    .box-icon {
+        background: rgba(121, 128, 255, 0.06);
+        border-radius: 8px;
+        .icon {
+            font-size: 20px;
+            color: rgba(49, 57, 79, 0.6);
+        }
+    }
+}
+.verify-area {
+    .tf-btn {
+        margin-top: 130px;
+    }
+}

@@ -143,3 +143,31 @@
         border-style: dotted;
     }
 }
+
+.divider-task {
+    position: relative;
+    width: 100%;
+    border-color: rgba(203, 205, 248, 1);
+    border-width: 1.5px 0 0 0;
+    border-style: solid;
+    z-index: 1;
+    .icon {
+        width: 12px;
+        height: 12px;
+        border: 1px solid rgba(203, 205, 248, 1);
+        border-radius: 50%;
+        position: relative;
+        left: 0;
+        top: -7px;
+        @include flex(center, center);
+        background-color: $white;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $primary;
+            border-radius: 50%;
+        }
+    }
+}

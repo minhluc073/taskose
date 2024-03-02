@@ -322,3 +322,60 @@
         }
     }
 }
+
+.time-line-task {
+    display: flex;
+    gap: 10px;
+    .box-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .time {
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(49, 57, 79, 0.5);
+            font-weight: 500;
+        }
+    }
+    .box-right {
+        flex-grow: 1;
+        padding: 12px 16px;
+        padding-left: 20px;
+        position: relative;
+        box-shadow: 0px 4px 36px 0px rgba(16, 21, 35, 0.05);
+        border-radius: 12px;
+        background-color: $white;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(49, 57, 79, 0.12);
+        }
+        .bottom {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 4px;
+            top: 18px;
+            bottom: 18px;
+            left: 0;
+            border-radius: 12px;
+            background-color: rgba(226, 232, 240, 1);
+        }
+        &.success {
+            &::after {
+                background-color: $success;
+            }
+        }
+        &.warning {
+            &::after {
+                background-color: $warning;
+            }
+        }
+    }
+}

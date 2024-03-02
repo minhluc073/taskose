@@ -82,10 +82,10 @@
 .icon-lock:before {
   content: "\e912";
 }
-.icon-eye:before {
+.icon-view:before {
   content: "\e913";
 }
-.icon-eye-off:before {
+.icon-hide:before {
   content: "\e915";
 }
 .icon-check:before {
