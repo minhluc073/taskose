@@ -967,7 +967,6 @@
     &.type-5 {
         background-color: rgba(252, 219, 102, 0.2);
         color: rgba(252, 219, 102, 1);
-        ;
     }
     &.type-6 {
         background-color: rgba(226, 232, 240, 0.4);
@@ -1153,9 +1152,17 @@
     // display: block;
     @include flex(center, center);
     overflow: hidden;
+    .logo-img {
+        width: 203px;
+        height: 50px;
+    }
     .spinner-circle {
-        width: 60px;
-        height: 60px;
+        position: fixed;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        width: 52px;
+        height: 52px;
         .spinner-child {
             &::before {
                 background-color: $primary;

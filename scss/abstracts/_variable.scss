@@ -94,16 +94,16 @@ $shadow-2: 0px 2px 36px 0px rgba(16, 21, 35, 0.07);
 :root {
     --surface: #f5f5f5;
     --white: #fff;
-    --primary: #e55223;
-    --primary-bold: #5b2400;
-    --primary-btn: #e55223;
-    --secondary: #787982;
+    --primary: #7980ff;
+    --primary-bold: #878dff;
+    // --primary-btn: #e55223;
+    --secondary: rgba(49, 57, 79, 0.7);
     --secondary2: #b9bac3;
-    --success: #1e7f11;
+    --success: #5fd788;
     --success2: #54b24c;
-    --danger: #e10000;
-    --warning: #ff8a00;
-    --info: #a70267;
+    --danger: #f05a5a;
+    --warning: #fcdb66;
+    --info: #64bef1;
     --light: #e7e7e7;
     --dark: #1b325f;
     --disable: #d3b7a5;
@@ -147,7 +147,7 @@ $shadow-2: 0px 2px 36px 0px rgba(16, 21, 35, 0.07);
     --rgba-dark: rgba(27, 50, 95, 0.1);
     --rgba-disable: rgba(135, 59, 10, 0.1);
     // liner garden colors
-    --liner-primary: linear-gradient(270deg, #e17e3e 0%, #873b0a 100%);
+    --liner-primary: linear-gradient(270deg, #7980ff 0%, #bcc0ff 100%);
     --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
 
     --onSurface: #151515;

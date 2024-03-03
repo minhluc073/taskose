@@ -27,13 +27,13 @@
         }
     }
     &.light {
-        background: var(--rgba-success);
+        background: var(--primary);
 
         &::before {
             background: var(--success);
         }
         &:checked:checked {
-            background: var(--success);
+            background: var(--primary);
             transition: 0.5s;
         }
     }
@@ -70,7 +70,7 @@
             transition: 0.5s;
         }
     }
-    &.danger {
+    &.info {
         background: var(--rgba-info);
 
         &::before {

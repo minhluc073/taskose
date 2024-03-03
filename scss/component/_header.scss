@@ -110,7 +110,8 @@
     .right {
         display: flex;
         align-items: center;
-        gap: 16px;
+        // gap: 16px;
+        gap: 8px;
         .avt {
             img {
                 border-radius: 50%;
@@ -140,7 +141,8 @@
         padding: 20px 24px 25px;
         max-width: 100%;
         .left {
-            gap: 16px;
+            // gap: 16px;
+            gap: 8px;
         }
         .avt {
             max-width: 52px;

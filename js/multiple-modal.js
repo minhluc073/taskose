@@ -6,7 +6,7 @@
         this.modalCount = 0;
     };
 
-    MultiModal.BASE_ZINDEX = 1040;
+    MultiModal.BASE_ZINDEX = 1050;
 
     MultiModal.prototype.show = function(target) {
         var that = this;

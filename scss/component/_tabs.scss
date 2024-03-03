@@ -24,7 +24,7 @@
         font-weight: 600;
         &.active {
             background: var(--white);
-            color: var(--surface);
+            color: $black;
             border-color: var(--line);
             border-bottom-color: transparent;
         }

@@ -12,7 +12,7 @@
  * load more
  * check item
  * touch spin
- * show notification
+ * show notificationpreloader 
  * hide popup 
  * touchSpin
  * preloader 
@@ -208,7 +208,7 @@
       }
 
       window.scrollTo(0, document.body.scrollHeight);
-        ipMessage.val("");
+      ipMessage.val("");
     });
   };
   /* gallery
