@@ -22,7 +22,10 @@
 <body>
     <!-- preloade -->
     <div class="preload preload-container">
-        <div class="spinner-circle spinner-line">
+        <div class="logo-img">
+            <img src="images/logo/logo-2.png" alt="logo">
+        </div>
+        <div class="spinner-circle lg success">
             <span class="spinner-circle1 spinner-child"></span>
             <span class="spinner-circle2 spinner-child"></span>
             <span class="spinner-circle3 spinner-child"></span>
@@ -33,27 +36,29 @@
             <span class="spinner-circle8 spinner-child"></span>
             <span class="spinner-circle9 spinner-child"></span>
         </div>
-      </div>
+    </div>
     <!-- /preload -->
     <div class="header fixed-top line-bt">
         <div class="left" data-bs-dismiss="offcanvas">
-            <a href="javascript:void(0);" class="icon"><i class="icon-back"></i></a>
+            <a href="javascript:void(0);" class="icon back-btn"><i class="icon-back"></i></a>
         </div>
-        <h5>Verify Code</h5>  
+        <h5>Verification</h5>  
     </div>
-    <div class="app-content style-3">
+    <div class="app-content style-3 verify-area pb-32">
         <div class="tf-container">
-                <p class="mt-24 body-6 text-black-5">Please enter the code we just sent to email</p>
-                <p class="body-6 fw-5">jonathansmith@gmail.com</p>
+                <p class="mt-24 body-6 text-black-5">Enter your phone number, we will send a authentication code</p>
 
-                <div class="digit-group mt-35">
-                    <input class="form-control" required type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" value="7">
-                    <input class="form-control" required type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2">
-                    <input class="form-control" required type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3">
-                    <input class="form-control" required type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4">
-                </div>
-                <p class="d-flex justify-content-center mt-32 text-center text-black-5 body-6">Resend code in&nbsp;<span class="fw-7 text-primary js-countdown" data-timer="60" data-labels=" :  ,  : , : , "></span></p>
-                <a href="successfully.html" class="mt-60 tf-btn primary">Continue</a>
+                <fieldset class="mt-20 input-icon drop-select dropdown">
+                    <div class="inner-group-ip">
+                        <select class="image-select">
+                            <option data-thumbnail="images/flags/eng.png"></option>
+                            <option data-thumbnail="images/flags/germany2.png"></option>
+                            <option data-thumbnail="images/flags/swedish.png"></option>
+                        </select>
+                    </div>
+                    <input type="number" placeholder="Enter your phone number" class="form-control">
+                </fieldset>
+                <a href="otp-code.html" class="tf-btn primary">Continue</a>
         </div>
     </div>
 

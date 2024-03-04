@@ -1550,9 +1550,9 @@ select {
   font-weight: 700;
 }
 .nav-link-item span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 22.4px;
+  line-height: 22px;
 }
 .nav-link-item .icon {
   font-size: 20px;
@@ -1864,8 +1864,9 @@ select {
   color: #7980ff;
 }
 .tf-btn.surface {
-  background: var(--surface);
-  border: 1px solid var(--surface);
+  background-color: rgb(175, 179, 255);
+  border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.9);
 }
 .tf-btn.secondary {
   background: #fff;
@@ -8040,6 +8041,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .message-box input:focus {
   border-color: #fff;
+  background-color: #fff;
 }
 .message-box .btn-message {
   position: absolute;

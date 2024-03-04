@@ -12,6 +12,7 @@
         border-radius: 0;
         &:focus {
             border-color: $white;
+            background-color: $white;
         }
     }
     .btn-message {
