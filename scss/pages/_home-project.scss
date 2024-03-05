@@ -394,6 +394,11 @@
     border: 0;
 }
 
+.fc-daygrid-day-frame.active {
+    background-color: rgba(215, 217, 255, 1);
+    color: $white;
+}
+
 .box-select-calendar {
     width: 53px;
     height: 54px;
@@ -472,6 +477,14 @@
         &:focus {
             border: 0;
             background-color: $white;
+        }
+    }
+}
+
+.modal-notiCenter {
+    .box-hhh {
+        .fc-view-harness {
+            height: 500px !important;
         }
     }
 }

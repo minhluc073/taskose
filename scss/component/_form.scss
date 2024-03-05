@@ -394,32 +394,7 @@
         }
     }
 }
-.box-review {
-    position: relative;
-    .meta-review {
-        position: absolute;
-        bottom: 20px;
-        left: 13px;
-        right: 13px;
-        img {
-            width: 20px;
-            height: 20px;
-        }
-    }
-}
-.lo-select,
-.time-select {
-    &.active {
-        .current {
-            background-color: $primary;
-            color: $white;
-            border-color: $primary;
-        }
-        &::after {
-            border-color: $white;
-        }
-    }
-}
+
 
 .select-wrapper {
     position: relative;

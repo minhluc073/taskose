@@ -12,7 +12,8 @@
  * load more
  * check item
  * touch spin
- * show notificationpreloader 
+ * show notification
+ * preloader 
  * hide popup 
  * touchSpin
  * preloader 
@@ -264,27 +265,13 @@
         $(this).addClass("active");
       });
     }
-    if ($("div").hasClass("lockApp")) {
-      $(".item-check").on("click", function () {
-        $(this)
-          .parents(".lockApp")
-          .find(".item-check.active")
-          .removeClass("active");
-        $(this).addClass("active");
-      });
-    }
-
-    $(".press-toggle").on("click", function () {
-      $(this).toggleClass("active");
-    });
 
     $(".act-suggest").click(function () {
       $(".act-suggest.active").removeClass("active");
       $(this).toggleClass("active");
     });
-
-    $(".act-suggest2").click(function () {
-      $(".act-suggest2.active").removeClass("active");
+    $(".fc-daygrid-day-frame").click(function () {
+      $(".fc-daygrid-day-frame.active").removeClass("active");
       $(this).toggleClass("active");
     });
   };
@@ -299,6 +286,12 @@
     $(".val-access").click(function (event) {
       $(".text-val-access").text($(this).find(".title-access").text());
       $(".desc-val-access").text($(this).find(".desc-access").text());
+    });
+  };
+
+  var handleCalendar = function () {
+    $("#calendarStart").on("shown.bs.modal", function () {
+      $("#calendar-start").fullCalendar("render");
     });
   };
 
@@ -334,27 +327,6 @@
     if ($(".stepper").length > 0) {
       $(".stepper").TouchSpin();
     }
-  };
-
-  /* show notification
-  ------------------------------------------------------------------------------------- */
-  var showNoti = function () {
-    if ($("#modalNoti").length > 0) {
-      let showPopup = sessionStorage.getItem("showPopup");
-      if (!JSON.parse(showPopup)) {
-        setTimeout(function () {
-          $("#modalNoti").modal("show");
-        }, 1000);
-      }
-    }
-  };
-
-  /* hide popup 
-  ------------------------------------------------------------------------------------- */
-  const hidePopupNoti = function () {
-    $(".btn-hide-modal").on("click", function () {
-      sessionStorage.setItem("showPopup", true);
-    });
   };
 
   /* preloader 
@@ -429,12 +401,11 @@
     treeView();
     changeValue();
     checkAllItem();
-    showNoti();
-    hidePopupNoti();
     progressCircle();
     clickModalSecond();
     flcustominput();
     tabSlide();
+    // handleCalendar();
     preloader();
   });
 })(jQuery);

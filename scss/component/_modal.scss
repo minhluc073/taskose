@@ -115,6 +115,8 @@
     .modal-dialog-centered {
         margin-left: 22px;
         margin-right: 22px;
+        justify-content: center;
+        max-width: 100% !important;
     }
 
     &.fade {
@@ -222,7 +224,7 @@
         border-bottom: 1px solid var(--line);
     }
     .font-title-btn {
-        padding: 20px ;
+        padding: 20px;
     }
 }
 
