@@ -288,10 +288,6 @@
       $(".act-suggest.active").removeClass("active");
       $(this).toggleClass("active");
     });
-    $(".fc-daygrid-day-frame").click(function () {
-      $(".fc-daygrid-day-frame.active").removeClass("active");
-      $(this).toggleClass("active");
-    });
   };
 
   /* change value

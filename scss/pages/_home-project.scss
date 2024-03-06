@@ -123,6 +123,16 @@
         width: 46px;
         height: 46px;
         border-radius: 8px;
+        &.active {
+            position: relative;
+            &::after {
+                position: absolute;
+                font-family: $fontIcon;
+                content: "\e93b";
+                color: $white;
+                font-size: 16px;
+            }
+        }
         &.color1 {
             background-color: #fabe25;
         }
@@ -387,16 +397,15 @@
     .fc-scroller-liquid-absolute {
         padding-top: 24px;
     }
+
+    .fc-highlight {
+        background-color: rgba(188, 192, 255, 1);
+    }
 }
 .fc-theme-standard .fc-scrollgrid,
 .fc-theme-standard td,
 .fc-theme-standard th {
     border: 0;
-}
-
-.fc-daygrid-day-frame.active {
-    background-color: rgba(215, 217, 255, 1);
-    color: $white;
 }
 
 .box-select-calendar {
@@ -450,6 +459,15 @@
     }
     .right {
         width: 60%;
+        input {
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            &:focus {
+                border: none;
+            }
+        }
     }
 }
 

@@ -6,7 +6,7 @@
     font-size: $fz-btn;
     font-weight: 700;
     line-height: $lh-btn;
-
+    border: 1px solid transparent;
     @include transition3;
 
     &.inline {
@@ -165,9 +165,16 @@
         background: $white;
         border: 1px solid $primary;
         color: $primary;
+        // svg {
+        //     width: 18px;
+        //     height: 18px;
+        // }
         &:hover {
             background: $primary;
             color: $white;
+            svg path {
+                fill: $white;
+            }
         }
     }
     &.outline-btn-success {
@@ -238,6 +245,10 @@
             font-size: 16px;
             color: $white;
         }
+    }
+    &.style-1 {
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 }
 .lg-zoom-in {

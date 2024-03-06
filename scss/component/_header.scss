@@ -79,6 +79,9 @@
         .icon {
             color: rgb(49, 57, 79, 0.5);
             font-size: 20px;
+            &.active {
+                color: $primary;
+            }
         }
     }
     &.style-2 {
@@ -105,13 +108,12 @@
     .left {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 16px;
     }
     .right {
         display: flex;
         align-items: center;
-        // gap: 16px;
-        gap: 8px;
+        gap: 16px;
         .avt {
             img {
                 border-radius: 50%;

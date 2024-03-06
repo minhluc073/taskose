@@ -113,6 +113,7 @@
     gap: 12px;
     border-radius: 12px;
     background-color: $soft-grey;
+    border: 1px solid $soft-grey;
     padding: 12px 16px;
     .box-icon {
         background: rgba(121, 128, 255, 0.06);
@@ -121,6 +122,9 @@
             font-size: 20px;
             color: rgba(49, 57, 79, 0.6);
         }
+    }
+    &.active {
+        border-color: $primary;
     }
 }
 .verify-area {
