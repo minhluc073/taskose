@@ -7670,8 +7670,39 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: #fff;
 }
 
-.modal-notiCenter .box-hhh .fc-view-harness {
-  height: 500px !important;
+.dropdown-calendar {
+  padding: 10px;
+}
+.dropdown-calendar .fc-direction-ltr {
+  width: 290px;
+}
+.dropdown-calendar .fc-direction-ltr .fc-col-header {
+  width: 100% !important;
+}
+.dropdown-calendar .fc-direction-ltr .fc-daygrid-body,
+.dropdown-calendar .fc-direction-ltr .fc-scrollgrid-sync-table {
+  width: 100% !important;
+}
+.dropdown-calendar .fc-view-harness {
+  height: 200px !important;
+}
+.dropdown-calendar .btn-close-drop {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -15px;
+  right: -15px;
+  background-color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(49, 57, 79, 0.7);
+}
+.dropdown-calendar .btn-close-drop.st2 {
+  left: -15px;
+  right: unset;
 }
 
 /*--------- profile ---------- */

@@ -104,6 +104,24 @@
     }
   };
 
+  var dropCalendar = function () {
+    $(".dropdown-calendar").on("click", function (event) {
+      event.stopPropagation();
+    });
+    $("#btnCloseDropdown1").click(function () {
+      $(this)
+        .parents(".dropdown")
+        .find(".dropdown-start-date")
+        .dropdown("toggle");
+    });
+    $("#btnCloseDropdown2").click(function () {
+      $(this)
+        .parents(".dropdown")
+        .find(".dropdown-due-date")
+        .dropdown("toggle");
+    });
+  };
+
   /* delete Item 
   ------------------------------------------------------------------------------------- */
   var delItem = function () {
@@ -289,12 +307,6 @@
     });
   };
 
-  var handleCalendar = function () {
-    $("#calendarStart").on("shown.bs.modal", function () {
-      $("#calendar-start").fullCalendar("render");
-    });
-  };
-
   /* load more
   ------------------------------------------------------------------------------------- */
   var loadmore = function () {
@@ -405,6 +417,7 @@
     clickModalSecond();
     flcustominput();
     tabSlide();
+    dropCalendar();
     // handleCalendar();
     preloader();
   });

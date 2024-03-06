@@ -48,7 +48,7 @@
             <a href="javascript:void(0);" class="icon text-black-6"><i class="icon-more"></i></a>
         </div>
     </div>
-    <div class="app-content style-3 pb-32">
+    <div class="app-content">
         <div class="tf-container">
             <div class="mt-24">
                 <h6 class="text-black-2">Task Name</h6>
@@ -57,26 +57,40 @@
             <div class="mt-20">
                 <h6 class="text-black-2">Timeline</h6>
                 <div class="d-flex justify-content-between mt-16">
-                    <div class="timeline-item-date gap-12" data-bs-toggle="modal" data-bs-target="#calendarStart">
-                        <div class="box-icon w-40 rounded-50">
-                            <i class="icon icon-calendar"></i>
+                    <div class="dropdown" >
+                        <div class="timeline-item-date gap-12 dropdown-backdrop dropdown-start-date" data-bs-toggle="dropdown" aria-haspopup="true">
+                            <div class="box-icon w-40 rounded-50">
+                                <i class="icon icon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <p class="text-caption-2 text-black-5">Start Date</p>
+                                <div class="mt-2 body-4 fw-5 text-black-7 valDate-start">December 25</div>
+                            </div>
                         </div>
-                        <div class="content">
-                            <p class="text-caption-2 text-black-5">Start Date</p>
-                            <div class="mt-2 body-4 fw-5 text-black-7 valDate-start">December 25</div>
-                        </div>
-                    </div>
-                    <div class="timeline-item-date gap-12">
-                        <div class="box-icon w-40 rounded-50">
-                            <i class="icon icon-calendar"></i>
-                        </div>
-                        <div class="content">
-                            <p class="text-caption-2 text-black-5">Due Date</p>
-                            <div class="mt-2 body-4 fw-5 text-black-7">December 31</div>
+                        <div class="dropdown-menu dropdown-calendar">
+                            <div id='calendar-start'></div>
+                            <!-- <span id="btnCloseDropdown1" class="btn-close-drop"><i class="icon-close2"></i></span> -->
+                            
                         </div>
                     </div>
+                    <div class="dropdown">
+                        <div class="timeline-item-date gap-12 dropdown-backdrop dropdown-due-date" data-bs-toggle="dropdown" aria-haspopup="true">
+                            <div class="box-icon w-40 rounded-50">
+                                <i class="icon icon-calendar"></i>
+                            </div>
+                            <div class="content">
+                                <p class="text-caption-2 text-black-5">Due Date</p>
+                                <div class="mt-2 body-4 fw-5 text-black-7 valDate-due">December 31</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu dropdown-calendar">
+                            <div id='calendar-due'></div>
+                            <!-- <span id="btnCloseDropdown2" class="btn-close-drop st2"><i class="icon-close2"></i></span> -->
+                            
+                        </div>
+                    </div>
+                    
                 </div>
-                <!-- <div id='calendar-start'></div> -->
 
 
 
@@ -172,74 +186,27 @@
     </div>
 
 
-    <div class="modal fade modalCenter" id="calendarStart">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-notiCenter">
-                <div class="box-hhh">
-                    <div id='calendar-start'></div>
-
-                </div>
-                  
-  
-  
-            </div>
-        </div>
-      </div>
     
-    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+    
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
-
+    <script type="text/javascript" src="js/calendar-custom.js"></script>
+    
     <script>
 
-        document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar-start');
         
-
-        var startDate = document.querySelector('.valDate-start');
-        var currentDate = document.querySelector('.fc-daygrid-day-frame');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            
-            selectable: true,
-            initialView: 'dayGridMonth',
-            firstDay: 1,
-            dateClick: function(info) {
-                console.log(info);
-
-                startDate.innerHTML = info.dateStr;
-
-            },
-            
-            select: function(info) {
-            alert('selected ' + info.startStr + ' to ' + info.endStr);
-            }
-        });
-        calendar.render();
-        });
+           
 
 
-        $(document).ready(function() {
-            $('#calendarStart').on('shown.bs.modal', function () {
-                $("#calendar-start").fullCalendar('render');
-   });
-    });
 
 
 
     </script>
 
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                firstDay: 1,
-            });
-            calendar.render();
-        });
-    </script> -->
+  
 
 
 </body>
