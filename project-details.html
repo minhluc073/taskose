@@ -209,7 +209,17 @@
                             </div>
                             <span class="h9 text-black-3">Due Date</span>
                         </div>
-                        <div class="box-right body-4 fw-5">Dec 27, 2024 <span class="icon-edit fs-12 text-primary"></span></div>
+                        <div class="box-right dropdown">
+                            <div class="dropdown-backdrop dropdown-due-date" data-bs-toggle="dropdown" aria-haspopup="true">
+                                <span class="body-4 fw-5 valDate-due"> Dec 27, 2024 </span>    
+                                <span class="icon-edit fs-12 text-primary"></span>
+                            </div>
+                            <div class="dropdown-menu dropdown-calendar">
+                                <div id='calendar-due'></div>
+                                <span id="btnCloseDropdown2" class="btn-close-drop st2"><i class="icon-close2"></i></span>   
+                            </div>
+                            
+                        </div>
 
                     </li>
                     <li class="mt-20 list-desc-project">
@@ -268,8 +278,11 @@
 
         
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/calendar-custom.js"></script>
+
 
 </body>
 </html>
