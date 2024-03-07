@@ -1,7 +1,10 @@
 /*
  * show pass
  * otp input
- * delete Item
+ * drop calendar
+ * delete Item 
+ * progress circle
+ * input file
  * back Page
  * clear Text
  * message
@@ -12,12 +15,12 @@
  * load more
  * check item
  * touch spin
- * show notification
  * preloader 
- * hide popup 
- * touchSpin
- * preloader 
+ * modal click handle
  * tree view
+ * tab slide 
+*******************************
+
 
  */
 (function ($) {
@@ -104,6 +107,9 @@
     }
   };
 
+
+  /* drop calendar
+  ------------------------------------------------------------------------------------- */
   var dropCalendar = function () {
     $(".dropdown-calendar").on("click", function (event) {
       event.stopPropagation();
@@ -230,6 +236,7 @@
       ipMessage.val("");
     });
   };
+
   /* gallery
   ------------------------------------------------------------------------------------- */
   var lightGalleryBox = function () {
@@ -309,6 +316,10 @@
       $(".text-val-drop").text($(this).find(".title-drop").text());
       $(".desc-val-drop").text($(this).find(".desc-drop").text());
     });
+
+    $(".val-drop-form").click(function (event) {
+      $(".text-val-form").text($(this).find(".title-form").text());
+    });
   };
 
   /* load more
@@ -355,7 +366,7 @@
     }, 200);
   };
 
-  /* modal click handler
+  /* modal click handle
   ------------------------------------------------------------------------------------- */
   var clickModalSecond = function () {
     $(".btn-choose-page").click(function () {
@@ -422,7 +433,6 @@
     flcustominput();
     tabSlide();
     dropCalendar();
-    // handleCalendar();
     preloader();
   });
 })(jQuery);
