@@ -30,6 +30,10 @@
             width: 20px;
             height: 28px;
             font-size: 20px;
+            color: rgb(49, 57, 79, 0.5);
+            &.active {
+                color: $primary;
+            }
         }
         // .icon-home {
         //     font-size: 24px;

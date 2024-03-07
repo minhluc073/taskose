@@ -53,13 +53,18 @@
             <div class="box-profile">
                 <div class="avatar avt-100">
                     <img src="images/avt/avt1.jpg" alt="img">
+                    <span class="icon" data-bs-target="#filterProfile" data-bs-toggle="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                            <path d="M11.0525 1.66371H9.27168V1.48075C9.27168 0.663377 8.6083 0 7.79093 0H4.95875C4.14104 0 3.47799 0.663377 3.47799 1.48075V1.66371H1.69682C0.879112 1.66371 0.216064 2.32675 0.216064 3.14446V8.51926C0.216064 9.33663 0.879112 10 1.69682 10H11.0532C11.8709 10 12.5339 9.33663 12.5339 8.51926V3.14446C12.5333 2.32642 11.8702 1.66371 11.0525 1.66371ZM6.37434 8.46397C4.83173 8.46397 3.57737 7.20961 3.57737 5.667C3.57737 4.12471 4.83173 2.87002 6.37434 2.87002C7.91696 2.87002 9.17132 4.12439 9.17132 5.667C9.17132 7.20961 7.91663 8.46397 6.37434 8.46397ZM7.8551 5.667C7.8551 6.48273 7.1904 7.14775 6.37434 7.14775C5.55829 7.14775 4.89359 6.48273 4.89359 5.667C4.89359 4.85094 5.55829 4.18625 6.37434 4.18625C7.1904 4.18625 7.8551 4.85094 7.8551 5.667Z" fill="white"/>
+                        </svg>
+                    </span>
                 </div>
                 <div class="content text-center">
                     <h5>Jonathan Smith</h5>
                     <p class="mt-4 body-4 text-black-4">jonathansmith@workmail.com</p>
                 </div>
             </div>
-            <a href="javascript:void(0);" class="tf-btn primary">Edit Profile</a>
+            <a href="edit-profile.html" class="tf-btn primary">Edit Profile</a>
             <ul class="mt-32">
                 <li class="list-view-item style-1 line-bt" data-bs-toggle="offcanvas" data-bs-target="#upgradePremium" aria-controls="offcanvasBottom">
                     <a href="javascript:void(0);" class="gap-20">
@@ -441,6 +446,28 @@
             <p class="body-2 text-black-3 text-center">Dummy content lorem velit qui adipisicing sunt do reprehenderit ad laborum tempor ullamco malinentah exercitation..</p>
             <a href="#" class="mt-24 tf-btn danger" data-bs-dismiss="offcanvas" aria-label="Close">Close Account</a>
             <div class="font-title-btn mt-20 text-black-5 text-center" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</div>
+        </div>
+    </div>
+    <!-- filter profile -->
+    <div class="modal fade action-sheet" id="filterProfile">
+        <div class="modal-dialog" role="document">
+            <ul class="modal-boxContent bg-white radius-8">
+                <li>
+                    <a href="javascript:void(0);"  class="d-flex fw-7 justify-content-center p-16">Show Profile Picture</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top d-flex fw-7 justify-content-center p-16">New Photo Shoot</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top d-flex fw-7 justify-content-center p-16">Select Photo Form Device</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="line-top d-flex fw-7 justify-content-center p-16">Choose An Existing Avatar</a>
+                </li>
+  
+            </ul>
+            <a href="javascript:void(0);" data-bs-dismiss="modal" class="mt-8 fw-6 text-danger d-flex justify-content-center p-12 bg-white radius-8">Dismiss</a>
+
         </div>
     </div>
 
