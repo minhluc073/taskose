@@ -1387,7 +1387,7 @@ select {
   padding-top: 100px;
 }
 .app-content.style-5 {
-  padding-top: 97px;
+  padding-top: 90px;
 }
 
 /*------------ Settings ----------------- */
@@ -1717,7 +1717,7 @@ select {
   border: 1px solid #fff;
 }
 .header-profile.style-1 {
-  padding: 20px 24px 25px;
+  padding: 20px 24px;
   max-width: 100%;
 }
 .header-profile.style-1 .left {
@@ -7199,6 +7199,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /*--------- home ---------- */
 .section-box-search {
+  padding-top: 15px;
   padding-bottom: 44px;
   background-color: #7980ff;
   margin-bottom: -20px;
@@ -7737,6 +7738,18 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   right: unset;
 }
 
+.box-description-task {
+  position: relative;
+}
+.box-description-task .area-message {
+  height: 60px;
+}
+.box-description-task .btn-see-desc {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+
 /*--------- profile ---------- */
 .box-profile {
   padding: 32px 0px 24px;
@@ -8006,6 +8019,40 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px -8px 44px 0px rgba(20, 25, 44, 0.05);
+}
+
+.ip-message[type=text] {
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(49, 57, 79, 0.7);
+}
+.ip-message[type=text]:focus {
+  background-color: #fff;
+}
+.ip-message[type=text].st-1 {
+  flex-grow: 1;
+  width: auto;
+}
+
+.area-message {
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(49, 57, 79, 0.7);
+  height: 100px;
+}
+.area-message:focus {
+  background-color: #fff;
+}
+.area-message.st-1 {
+  height: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

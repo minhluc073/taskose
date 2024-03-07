@@ -1,4 +1,5 @@
 .section-box-search {
+    padding-top: 15px;
     padding-bottom: 44px;
     background-color: $primary;
     margin-bottom: -20px;
@@ -531,5 +532,19 @@
             left: -15px;
             right: unset;
         }
+    }
+}
+
+
+.box-description-task {
+    position: relative;
+    .area-message{
+        height: 60px;
+
+    }
+    .btn-see-desc{
+        position: absolute;
+        right: 0;
+        bottom: 5px;
     }
 }

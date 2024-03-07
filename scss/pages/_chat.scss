@@ -245,3 +245,40 @@
     justify-content: space-between;
     box-shadow: 0px -8px 44px 0px rgba(20, 25, 44, 0.05);
 }
+
+.ip-message[type="text"] {
+    border: 0;
+    border-radius: 0;
+    background-color: $white;
+    padding: 0;
+    font-size: 12px;
+    line-height: 20px;
+    
+    color: rgba(49, 57, 79, 0.7);
+    &:focus {
+        background-color: $white;
+    }
+    &.st-1 {
+        flex-grow: 1;
+        width: auto; 
+    }
+    
+}
+
+.area-message {
+    border: 0;
+    border-radius: 0;
+    background-color: $white;
+    padding: 0;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(49, 57, 79, 0.7);
+    height: 100px;
+    &:focus {
+        background-color: $white;
+    }
+    &.st-1 {
+        height: 40px;
+    }
+   
+}
