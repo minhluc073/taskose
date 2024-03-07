@@ -199,7 +199,7 @@
   ------------------------------------------------------------------------------------- */
   var handleMessage = function () {
     $(".btn-message").on("click", function () {
-      var ipMessage = $(".ip-message");
+      var ipMessage = $(".val-message");
       var messValue = ipMessage.val();
       var currentTime = new Date();
       var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
@@ -288,6 +288,14 @@
       $(".act-suggest.active").removeClass("active");
       $(this).toggleClass("active");
     });
+    $(".act-suggest2").click(function () {
+      $(".act-suggest2.active").removeClass("active");
+      $(this).toggleClass("active");
+    });
+    $(".act-suggest3").click(function () {
+      $(".act-suggest3.active").removeClass("active");
+      $(this).toggleClass("active");
+    });
   };
 
   /* change value
@@ -297,9 +305,9 @@
       $(".text-val-language").text($(this).text());
     });
 
-    $(".val-access").click(function (event) {
-      $(".text-val-access").text($(this).find(".title-access").text());
-      $(".desc-val-access").text($(this).find(".desc-access").text());
+    $(".val-drop").click(function (event) {
+      $(".text-val-drop").text($(this).find(".title-drop").text());
+      $(".desc-val-drop").text($(this).find(".desc-drop").text());
     });
   };
 

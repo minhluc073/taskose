@@ -3088,7 +3088,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: #fff;
 }
 .footer-fixed.button {
-  padding: 20px 24px 32px;
+  padding: 20px 24px 24px;
 }
 .footer-fixed.st-1 {
   z-index: 1046;
@@ -7686,11 +7686,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 24px;
 }
 .enter-task .box-left {
-  left: 24px;
-  top: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -7706,6 +7703,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .enter-task input:focus {
   border: 0;
   background-color: #fff;
+}
+.enter-task .list-stacked {
+  margin-right: 8px;
 }
 
 .dropdown-calendar {
@@ -7753,6 +7753,49 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: absolute;
   right: 0;
   bottom: 5px;
+}
+
+.dropdown .drop-select-visibility {
+  position: relative;
+  padding: 14px;
+  padding-left: 48px;
+  padding-right: 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+}
+.dropdown .drop-select-visibility .icon {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.dropdown .drop-select-visibility::after {
+  content: "\e91d";
+  position: absolute;
+  font-family: "icomoon";
+  transform: rotate(270deg);
+  font-size: 12px;
+  right: 20px;
+  top: 12px;
+  color: rgba(49, 57, 79, 0.6);
+  border: 0;
+}
+.dropdown .title-visibility {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(49, 57, 79, 0.8);
+}
+.dropdown .dropdown-visibility {
+  padding: 0;
+}
+.dropdown .dropdown-visibility .dropdown-item {
+  padding: 15px;
+}
+.dropdown .dropdown-visibility .dropdown-item.active {
+  background-color: transparent;
+}
+.dropdown .dropdown-visibility .dropdown-item.active .title-visibility {
+  color: #7980ff;
 }
 
 /*--------- profile ---------- */
